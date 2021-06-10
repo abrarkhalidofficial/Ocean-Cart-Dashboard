@@ -1,0 +1,62 @@
+@import "../App.scss";
+
+.panel__main__role__manager__input__row {
+  width: 50%;
+  margin-bottom: 1em;
+  position: relative;
+}
+.panel__main__role__manager__input__row__option__btn {
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  background-color: $font-color;
+  padding: 10px;
+}
+.panel__main__role__manager__input__row__option__btn:hover {
+  background-color: darken($font-color, 10%);
+}
+.panel__main__role__manager__input__row__option__btn svg {
+  color: $primary;
+}
+.panel__main__role__manager__row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.panel__main__role__manager__cta__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel__main__role__manager__info {
+  display: flex;
+}
+.panel__main__role__manager__cta {
+  width: 150px;
+  margin: 0em 0.5em;
+}
+.panel__main__role__manager__new__role__cta {
+  margin-top: 1em;
+  width: 300px;
+}
+.panel__main__row__entry__cta {
+  width: 80px;
+}
+.panel__main__role__manager__heading__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+@media (max-width: 700px) {
+  .panel__main__role__manager__input__row {
+    width: 100%;
+  }
+}

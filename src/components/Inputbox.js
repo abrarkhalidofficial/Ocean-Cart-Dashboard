@@ -1,14 +1,16 @@
-import React from 'react'
+import React from "react";
+import { Form } from "react-bootstrap";
 
-
-export default function InputBox({type,placeholder,inputStyle}) {
-    
+export default class InputboxComponent extends React.Component {
+  render() {
     return (
-        <input
-              type={type}
-              className="login__form__input"
-              placeholder={placeholder}
-              style={inputStyle}
-            />
-    )
+      <Form.Control
+        placeholder={this.props.placeholder}
+        type={this.props.type}
+        className={this.props.ClassName}
+        as={this.props.textarea}
+        rows={5}
+      />
+    );
+  }
 }
