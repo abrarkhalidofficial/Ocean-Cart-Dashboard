@@ -1,0 +1,88 @@
+@import "../App.scss";
+
+.panel__main__add__product {
+  display: flex;
+}
+.panel__main__add__product__col__xl {
+  width: 70%;
+}
+.panel__main__add__product__row {
+  display: flex;
+}
+.input__field {
+  margin-right: 1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+.input__field {
+  font-size: $normal-font-size;
+  font-weight: bold;
+  color: $font-color;
+}
+.input__field__box {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary;
+  position: relative;
+  border: 1px solid $primary;
+  border-radius: 5px;
+}
+.input__field__box:hover {
+  border-color: $font-color;
+}
+.input__field__box:focus {
+  border-color: $highlite;
+}
+.input__field__box input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.panel__main__add__product__col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+}
+.panel__main__add__variant__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.panel__main__add__variant__row__heading {
+  font-size: $heading-font-size + 5px;
+  color: $font-color;
+}
+.catagory__card {
+  flex: 1;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.catagory__card__btn {
+  font-size: $normal-font-size;
+  color: $font-color;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1em;
+}
+.catagory__card__btn:hover {
+  color: $highlite;
+}

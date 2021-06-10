@@ -3,10 +3,8 @@ import SideBar from "../components/SideBar";
 import "./Dashboard.scss";
 import { Switch, Route } from "react-router-dom";
 import DashboardPanel from "./DashboardPanel";
-import ApplicantsPanel from "./ApplicantsPanel";
-import JobListingPanel from "./JobListingPanel";
-import JobPostingPanel from "./JobPostingPanel";
-import FilterPanel from "./FilterPanel";
+import OrderPanel from "./OrderPanel";
+import AddProduct from "./AddProduct";
 
 export default class Dashboard extends React.Component {
   render() {
@@ -18,17 +16,17 @@ export default class Dashboard extends React.Component {
             <DashboardPanel />
           </Route>
           <div className="main">
-            <Route path="/dashboard/job-posting">
-              <JobPostingPanel />
+            <Route path="/dashboard/order-pending">
+              <OrderPanel screenName="Order Pending" />
             </Route>
-            <Route path="/dashboard/job-listing">
-              <JobListingPanel />
+            <Route path="/dashboard/order-delivered">
+              <OrderPanel screenName="Order Delivered" />
             </Route>
-            <Route path="/dashboard/applicants">
-              <ApplicantsPanel />
+            <Route path="/dashboard/order-canceled">
+              <OrderPanel screenName="Order Canceled" />
             </Route>
-            <Route path="/dashboard/filters">
-              <FilterPanel />
+            <Route path="/dashboard/add-product">
+              <AddProduct screenName="Add Product" />
             </Route>
           </div>
         </Switch>

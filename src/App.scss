@@ -2,11 +2,11 @@
 
 $primary: #f3f3f3;
 $font-color: #374957;
-$dark: #009bd1;
-$highlite: #ffb229;
+$dark: #04dfe6;
+$highlite: #57d871;
 $blips: $font-color;
-$light-green: #f8fdff;
-$nav-pills-link-active-bg: $dark !important;
+$light-green: $primary;
+$nav-pills-link-active-bg: $highlite !important;
 $heading-font-size: 18px;
 $normal-font-size: 14px;
 $xl-heading: $heading-font-size + 10px;
@@ -44,7 +44,7 @@ body {
   border-color: $font-color !important;
 }
 .input__box:focus {
-  border-color: $dark !important;
+  border-color: $highlite !important;
 }
 .search__box {
   background-color: $primary !important;
@@ -68,7 +68,7 @@ body {
   margin: 0em auto;
 }
 .btn__cta {
-  background-color: $dark !important;
+  background: linear-gradient(90deg, $dark, $highlite) !important;
   border: none !important;
   height: 40px !important;
   font-size: $normal-font-size !important;
@@ -141,7 +141,6 @@ body {
   font-size: $normal-font-size;
   color: $font-color;
   padding: 0.7em 1em !important;
-  border-radius: 10px !important;
   display: flex !important;
   align-items: center !important;
   margin-bottom: 0.5em !important;
@@ -153,12 +152,57 @@ body {
   width: 20px;
   height: 20px;
 }
-
+.nav__link__vertical__accordion {
+  background-color: transparent !important;
+  font-size: $normal-font-size !important;
+  color: $font-color !important;
+  padding: 0.7em 1em !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 0.5em !important;
+  white-space: nowrap;
+  border: none !important;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__link__vertical__accordion:hover {
+  background-color: $primary !important;
+  color: $font-color !important;
+}
+.nav__link__vertical__accordion:focus {
+  background-color: $highlite !important;
+  color: $primary !important;
+}
+.nav__link__vertical__accordion__icon {
+  width: 10px;
+  height: 10px;
+}
+.nav__link__vertical__accordion .nav__link__vertical__accordion__icon {
+  transform: rotate(0deg);
+}
+.nav__link__vertical__accordion:focus .nav__link__vertical__accordion__icon {
+  transform: rotate(90deg);
+}
 .nav__link__vertical:hover {
   background-color: darken($primary, 10%);
   color: $font-color;
 }
-
+.nav__link__vertical__collapse {
+  background-color: transparent !important;
+  font-size: $normal-font-size !important;
+  color: $font-color !important;
+  padding: 0.7em 1em !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 1.7em !important;
+  white-space: nowrap;
+}
+.nav__link__vertical__collapse:hover {
+  background-color: $primary !important;
+  color: $font-color !important;
+}
 .nav__link__horizontal {
   background-color: $primary;
   color: $dark;
