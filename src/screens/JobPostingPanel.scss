@@ -1,0 +1,94 @@
+@import "../App.scss";
+
+.company__details__content {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+}
+.company__details__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+  width: 100%;
+}
+.company__details__row__textarea {
+  display: flex;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.company__details__row__attribute {
+  display: flex;
+  width: 300px;
+}
+.company__details__row__attribute svg {
+  width: 22px;
+  height: 22px;
+}
+.company__details__row__attribute__heading {
+  padding: 0em 1em;
+  color: $font-color;
+  font-weight: 800;
+  font-size: $normal-font-size + 2;
+}
+.select__multi-value {
+  background-color: $primary !important;
+}
+.company__details__row__value {
+  color: $font-color;
+  font-size: $normal-font-size;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.company__details__row__value__badge {
+  color: $font-color;
+  font-size: $normal-font-size;
+  border: 1.5px solid $dark;
+  padding: 0.3em 1em;
+  border-radius: 20px;
+  margin-right: 1em;
+}
+.company__details__row__input__box {
+  width: 500px;
+}
+.company__details__row__input__box .ck-editor {
+  flex: 1 !important;
+  max-width: 530px !important;
+}
+.company__details__row__input__box .ck-toolbar {
+  border-color: $primary !important;
+  background-color: $primary !important;
+}
+.company__details__row__input__box .ck-content {
+  height: 200px;
+  background-color: $primary !important;
+  border-color: $primary !important;
+  border-top-color: #d4d4d4 !important;
+}
+.company__details__row__input__box .ck-content:hover {
+  border-color: $font-color !important;
+}
+.company__details__row__input__box .ck-content:focus {
+  border-color: $dark !important;
+}
+.company__details__row__input__box .ck-content p {
+  color: $font-color !important;
+  font-size: $normal-font-size !important;
+}
+@media (max-width: 700px) {
+  .company__details__row {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .company__details__row__attribute {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  .company__details__row__value {
+    margin-bottom: 1em;
+  }
+  .company__details__row__input__box {
+    width: 100%;
+  }
+}
