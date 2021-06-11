@@ -251,13 +251,12 @@ body {
   height: 20px;
 }
 .nav__link__vertical__accordion {
-  background-color: transparent !important;
+  background-color: #ffffff !important;
   font-size: $normal-font-size !important;
   color: $font-color !important;
   padding: 0.7em 1em !important;
   display: flex !important;
   align-items: center !important;
-  margin-bottom: 0.5em !important;
   white-space: nowrap;
   border: none !important;
   width: 100% !important;
@@ -270,18 +269,26 @@ body {
   color: $font-color !important;
 }
 .nav__link__vertical__accordion:focus {
-  background-color: $highlite !important;
-  color: $primary !important;
+  background-color: $primary !important;
+  color: $font-color !important;
+}
+.nav__link__vertical__accordion:active {
+  background-color: $primary !important;
+  color: $font-color !important;
 }
 .nav__link__vertical__accordion__icon {
   width: 10px;
   height: 10px;
 }
 .nav__link__vertical__accordion .nav__link__vertical__accordion__icon {
-  transform: rotate(0deg);
-}
-.nav__link__vertical__accordion:focus .nav__link__vertical__accordion__icon {
   transform: rotate(90deg);
+}
+.nav__link__vertical__accordion__link {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.nav__link__vertical__accordion__collapse {
+  background-color: $primary;
 }
 .nav__link__vertical:hover {
   background-color: darken($primary, 10%);
