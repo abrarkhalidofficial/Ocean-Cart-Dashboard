@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import DashboardPanel from "./DashboardPanel";
 import OrderPanel from "./OrderPanel";
 import AddProduct from "./AddProduct";
+import AddCoupon from "./AddCoupon";
 
 export default class Dashboard extends React.Component {
   render() {
@@ -27,6 +28,12 @@ export default class Dashboard extends React.Component {
             </Route>
             <Route path="/dashboard/add-product">
               <AddProduct screenName="Add Product" />
+            </Route>
+            <Route path="/dashboard/edit-product">
+              <AddProduct screenName="Edit Product" />
+            </Route>
+            <Route path="/dashboard/add-coupon">
+              <AddCoupon screenName="Add Coupon" />
             </Route>
           </div>
         </Switch>

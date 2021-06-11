@@ -86,3 +86,15 @@
 .catagory__card__btn:hover {
   color: $highlite;
 }
+@media (max-width: 900px) {
+  .panel__main__add__product {
+    flex-direction: column;
+  }
+  .panel__main__add__product__col__xl {
+    width: 100%;
+    margin-right: 0em;
+  }
+  .panel__main__add__product__row {
+    flex-direction: column;
+  }
+}

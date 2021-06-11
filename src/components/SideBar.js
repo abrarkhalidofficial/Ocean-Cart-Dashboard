@@ -102,11 +102,11 @@ export default class SideBar extends React.Component {
           <Nav.Item>
             <Nav.Link
               as={Link}
-              to="/dashboard/products"
+              to="/dashboard/add-coupon"
               className="nav__link__vertical"
               eventKey="link-3"
             >
-              Product
+              Add Coupon
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
@@ -116,6 +116,16 @@ export default class SideBar extends React.Component {
               className="nav__link__vertical"
               eventKey="link-4"
             >
+              Product
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/dashboard/products"
+              className="nav__link__vertical"
+              eventKey="link-5"
+            >
               Order History
             </Nav.Link>
           </Nav.Item>
@@ -124,7 +134,7 @@ export default class SideBar extends React.Component {
               as={Link}
               to="/dashboard/order-details"
               className="nav__link__vertical"
-              eventKey="link-5"
+              eventKey="link-6"
             >
               Order Details
             </Nav.Link>

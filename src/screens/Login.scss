@@ -42,6 +42,7 @@
     cursor: pointer;
     padding: 0;
     user-select: none;
+    font-size: $normal-font-size;
   }
 
   // Box.
@@ -58,7 +59,7 @@
 
   // Box hover
   &:hover + label:before {
-    background: $dark;
+    background: $highlite;
   }
 
   // Box focus
@@ -68,7 +69,7 @@
 
   // Box checked
   &:checked + label:before {
-    background: $dark;
+    background: $highlite;
   }
 
   // Disabled state label.
@@ -88,7 +89,7 @@
     content: "";
     position: absolute;
     left: 5px;
-    top: 9.2px;
+    top: 9px;
     background: white;
     width: 2px;
     height: 2px;

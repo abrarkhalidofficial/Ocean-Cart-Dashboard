@@ -26,12 +26,110 @@ p {
 }
 
 body {
-  background-color: $primary !important;
+  background: url("./assets/loginBg.png"), no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+.brand__name {
+  font-size: 35px !important;
+  font-weight: bold !important;
+  margin-right: 1em;
+  color: $highlite !important;
+}
+.brand__name:hover {
+  color: darken($highlite, 20%);
+}
+.catagory__select {
+  width: 150px;
+}
+.catagory__select * {
+  color: $primary !important;
+  background-color: rgba(3, 67, 69, 0.9) !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+  border-radius: 8px !important;
+  font-size: $normal-font-size !important;
+}
+.nav__bar {
+  background-color: transparent !important;
+  padding: 1em 5em !important;
+  position: relative;
+}
+.nav__bar__solid {
+  background-color: white !important;
+  padding: 1em 5em !important;
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.active__reverse {
+  background-color: $primary !important;
+}
+.nav__link__wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.nav__link {
+  color: $primary !important;
+  font-weight: 400;
+  font-size: $normal-font-size !important;
+  background-color: rgba(3, 67, 69, 0.9) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.8em !important;
+  border-radius: 8px;
+  margin: 0em 1em;
+}
+.nav__link svg {
+  width: 20px;
+  height: 20px;
+}
+.nav__link:hover {
+  transition: 200ms;
+  color: $dark !important;
+}
+.active__reverse .nav__link {
+  color: $font-color !important;
+}
+.active__reverse .nav__link:hover {
+  color: $dark !important;
+}
+.header__form {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  height: fit-content;
+  width: 50% !important;
+  position: absolute;
+  left: 25%;
+  top: 1.4em;
+  border-radius: 10px;
+}
+.header__form__input {
+  height: 50px;
+  border: 1px solid $font-color;
+  border-right: none;
+  font-size: $normal-font-size;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0em 1em;
+  outline: none;
+  width: 95%;
+}
+.header__form__input:focus {
+  border-color: $dark;
 }
 
 .input__box {

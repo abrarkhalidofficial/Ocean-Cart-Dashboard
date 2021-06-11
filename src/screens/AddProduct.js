@@ -109,7 +109,7 @@ export default function AddProduct({ screenName }) {
         </div>
         <div className="panel__main__add__product__col">
           <div className="input__field">
-            <Button placeholder="Save Draft" variant="btn" />
+            <Button placeholder="Save Draft" variant="upload-btn" />
           </div>
           <div className="input__field">
             <Button placeholder="Add Product" variant="btn" />
@@ -192,10 +192,20 @@ export default function AddProduct({ screenName }) {
               </button>
             </div>
             {showCatagoryEdit ? (
-              <InputboxComponent
-                placeholder="Add New Catagory Name"
-                ClassName="input__box"
-              />
+              <form>
+                <InputboxComponent
+                  placeholder="Add New Catagory Name"
+                  ClassName="input__box"
+                />
+                <div style={{ height: "1em" }}></div>
+                <Button
+                  placeholder="Add catagory"
+                  variant="btn"
+                  onClick={() => {
+                    setShowCatagoryEdit(false);
+                  }}
+                />
+              </form>
             ) : null}
           </div>
           <div className="veriant__card">
