@@ -482,6 +482,38 @@ body {
   background-color: $primary;
   border-radius: 10px;
 }
+.users__list__main__container{
+  display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: $primary;
+    margin-top: 1.5em !important;
+    padding: .5em !important;
+    border-radius: 6px;
+    margin-top: 1em !important;
+}
+.users__list{
+  font-size: $normal-font-size;
+  color: $font-color;
+}
+.users__list__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-size: $normal-font-size;
+  color: $font-color;
+}
+.users__list__container img{
+  margin-right: .5em;
+  width: 30px;
+  height: 30px;
+}
+
 @media (max-width: 700px) {
   .panel__card {
     width: 100%;

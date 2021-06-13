@@ -6,6 +6,7 @@ import DashboardPanel from "./DashboardPanel";
 import OrderPanel from "./OrderPanel";
 import AddProduct from "./AddProduct";
 import AddCoupon from "./AddCoupon";
+import Users from "./Users";
 
 export default class Dashboard extends React.Component {
   render() {
@@ -35,7 +36,11 @@ export default class Dashboard extends React.Component {
             <Route path="/dashboard/add-coupon">
               <AddCoupon screenName="Add Coupon" />
             </Route>
+            <Route path="/dashboard/users" exact>
+            <Users />
+          </Route>
           </div>
+          
         </Switch>
       </div>
     );
