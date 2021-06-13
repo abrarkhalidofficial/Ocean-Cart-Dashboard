@@ -21,16 +21,20 @@
     align-items: center;
     align-content: center;
 }
-.btn__cta{
+.btn__users__panel{
     background: transparent !important;
+    border: 1px solid #DCDCDC;
+    border-radius: 23px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-left: 2em;
     color: $font-color !important;
-    margin-left: 1em;
-    border: 1px solid #DCDCDC !important;
-    border-radius: 23px !important;
+    font-size: $normal-font-size !important;
 }
-.btn__cta:hover{
-    background-color: rgba(99, 98, 98, 0.089) !important;
-}
+
 .users__panel__input__boxes{
     background-color: $primary !important;
   border: 1px solid $primary !important;

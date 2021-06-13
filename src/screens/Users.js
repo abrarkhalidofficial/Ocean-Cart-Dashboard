@@ -1,8 +1,9 @@
 import React from "react";
+import {Button} from "react-bootstrap";
 import "./Users.scss";
 import UsersList from "../components/UsersList";
 import Inputbox from "../components/Inputbox";
-import Button from "../components/Button";
+
 
 export default class Users extends React.Component {
   render() {
@@ -15,9 +16,10 @@ export default class Users extends React.Component {
               <Inputbox placeholder="Email Address" type="text" ClassName="users__panel__input__boxes"/>
               <Inputbox placeholder="First Name / Last name" type="text" ClassName="users__panel__input__boxes"/>
 
-              <Button placeholder="Plus Membership" variant="link" className="btn__cta" />
-              <Button placeholder="Identity Documents" variant="link"  className="btn__cta" />
-              <Button placeholder="Referrals" variant="link"   className="btn__cta" />
+              <Button variant="light" className="btn__users__panel">Plus Membership</Button>
+              <Button variant="light" className="btn__users__panel">Identity Documents</Button>
+              <Button variant="light" className="btn__users__panel">Referrals</Button>
+
           </div>
           <div className="users__panel__top__users__headings">
               <div className="users__panel__top__heading">Users</div>
