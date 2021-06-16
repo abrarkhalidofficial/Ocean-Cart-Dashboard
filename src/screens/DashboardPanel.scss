@@ -49,10 +49,19 @@
   width: 30px;
   margin-right: 1em;
 }
-
+.panel__conatainer__empty__row__col {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
 @media (max-width: 700px) {
   .panel__conatainer__empty__row {
     flex-direction: column;
+    width: 100% !important;
+  }
+  .panel__conatainer__empty__row__col {
+    flex-direction: column;
+    width: 100% !important;
   }
   .panel__conatainer__empty__row__half {
     width: 100%;

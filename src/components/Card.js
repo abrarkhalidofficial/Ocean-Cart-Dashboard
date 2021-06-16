@@ -7,11 +7,14 @@ export default function Card({
   children,
   contentHeading,
   contentInfo,
+  headingTimeStamp,
 }) {
   return (
     <div className="panel__card">
       <div className="panel__card__heading__row">
-        <div className="panel__card__heading">{heading}</div>
+        <div className="panel__card__heading">
+          {heading} <span>{headingTimeStamp}</span>
+        </div>
         <div className="panel__card__about">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 7.916">
             <g

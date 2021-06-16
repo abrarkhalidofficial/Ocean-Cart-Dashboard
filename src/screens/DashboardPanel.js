@@ -37,6 +37,123 @@ export default class DashboardPanel extends React.Component {
       <div className="panel__conatainer__empty">
         <div className="panel__conatainer__empty__row">
           <Card
+            heading="Placed to Prepared:
+            "
+            headingTimeStamp="0 days, 9 Hours"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="9"
+          />
+          <Card
+            heading=" Prepared To Merchant Departure:"
+            headingTimeStamp=" 1 day, 13 hours"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="37 hours"
+          />
+          <Card
+            heading="Merchant Departure to USA Consolidation:"
+            headingTimeStamp=" 1 day, 13 hours"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="59 hours"
+          />
+        </div>
+        <div className="panel__conatainer__empty__row">
+          <Card
+            heading="USA Consolidation Arrival To Departure: "
+            headingTimeStamp="2 days, 11 hours"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="59 hours"
+          />
+          <Card
+            heading="USA Consolidation Arrival To Departure:"
+            headingTimeStamp="2 days, 11 hours"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="54 hours"
+          />
+          <Card
+            heading="USA Consolidation Arrival To Departure:"
+            headingTimeStamp="2 days, 11 hours"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="54 hours"
+          />
+        </div>
+        <div className="panel__conatainer__empty__row">
+          <Card
+            heading="USA Consolidation Arrival To Departure:"
+            headingTimeStamp="2 days, 11 hours"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="54 hours"
+          />
+          <Card
+            heading="USA Consolidation Arrival To Departure:"
+            headingTimeStamp="2 days, 11 hours"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="54 hours"
+          />
+          <div style={{ opacity: 0, width: "33%" }}></div>
+        </div>
+        <div className="panel__conatainer__empty__row">
+          <Card
+            heading="Lorem"
+            infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+            contentHeading="24,795"
+          />
+
+          <div className="panel__conatainer__empty__row__col">
+            <div className="panel__conatainer__empty__row">
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+            </div>
+            <div className="panel__conatainer__empty__row">
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+            </div>
+            <div className="panel__conatainer__empty__row">
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+              <Card
+                heading="Lorem"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                contentHeading="24,795"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="panel__conatainer__empty__row">
+          <Card
             heading="Lorem"
             infoHeading="Lorem"
             infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."

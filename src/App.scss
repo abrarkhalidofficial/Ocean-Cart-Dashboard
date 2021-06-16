@@ -418,10 +418,16 @@ body {
   align-items: center;
 }
 .panel__card__heading {
-  font-size: $heading-font-size;
+  font-size: $normal-font-size + 2px;
   color: $font-color;
-  font-weight: 600;
+  font-weight: 900;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.panel__card__heading span {
+  font-size: $normal-font-size;
+  font-weight: 300;
 }
 .panel__card__about {
   border-radius: 25px;
@@ -482,24 +488,24 @@ body {
   background-color: $primary;
   border-radius: 10px;
 }
-.users__list__main__container{
+.users__list__main__container {
   display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    background-color: $primary;
-    margin-top: 1.5em !important;
-    padding: .5em !important;
-    border-radius: 6px;
-    margin-top: 1em !important;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: $primary;
+  margin-top: 1.5em !important;
+  padding: 0.5em !important;
+  border-radius: 6px;
+  margin-top: 1em !important;
 }
-.users__list{
+.users__list {
   font-size: $normal-font-size;
   color: $font-color;
 }
-.users__list__container{
+.users__list__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -508,8 +514,8 @@ body {
   font-size: $normal-font-size;
   color: $font-color;
 }
-.users__list__container img{
-  margin-right: .5em;
+.users__list__container img {
+  margin-right: 0.5em;
   width: 30px;
   height: 30px;
 }
