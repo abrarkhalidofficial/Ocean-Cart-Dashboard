@@ -31,12 +31,9 @@ const MessagePanelRow = () => {
   );
 };
 
-function StatsCard({ isData, data }) {
+function StatsCard({ isData, data, heading, infoContent }) {
   return (
-    <Card
-      heading="Lorem"
-      infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
-    >
+    <Card heading={heading} infoContent={infoContent}>
       {isData ? (
         <div className="panel__card__content__statistics">{data}</div>
       ) : (
@@ -116,43 +113,110 @@ export default class DashboardPanel extends React.Component {
               <span>#OI-23434</span>
             </div>
             <div className="panel__card__content__notes">
-              DB item:
-              <span>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
-                illum beatae vero fugiat, sapiente omnis atque optio odio quasi
-                id recusandae excepturi ea accusamus, sunt amet explicabo
-                quisquam velit? Dignissimos?
-              </span>
+              Issue:
+              <span>#3434935</span>
             </div>
             <div className="panel__card__content__notes">
-              DB item:
-              <span>#OI-23434</span>
+              Delay in order:
+              <span>2 days</span>
+            </div>
+            <div className="panel__card__content__notes">
+              Amount / Method:
+              <span>$50 / lorem</span>
             </div>
             <div className="panel__card__content__notes">
               DB item:
               <a href="https://www.google.com/">https://www.google.com/</a>
             </div>
+            <div className="panel__card__content__notes">
+              CC:
+              <span>lorem ipsm</span>
+            </div>
           </Card>
           <div className="panel__conatainer__empty__row__col">
             <div className="panel__conatainer__empty__row">
-              <StatsCard isData={true} data="lorem" />
-              <StatsCard isData={true} />
-              <StatsCard isData={true} />
-            </div>
-            <div className="panel__conatainer__empty__row">
-              <StatsCard isData={true} data="lorem" />
-              <StatsCard isData={false} />
-              <StatsCard isData={true} />
-            </div>
-            <div className="panel__conatainer__empty__row">
-              <StatsCard isData={true} data="lorem" />
               <StatsCard
                 isData={true}
+                data="Priority"
+                heading="Tickets"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+              />
+              <StatsCard
+                isData={false}
+                heading="Unpaired Items"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                data="Unpaired Items"
+              />
+              <StatsCard
+                isData={true}
+                heading="Preparation API"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
                 data={
-                  <a href="https://www.google.com/">https://www.google.com/</a>
+                  <>
+                    <div>
+                      <span style={{ fontWeight: "bold" }}>87.1% </span>orders
+                      are prepared in last 24 hours
+                    </div>
+                    <div>Average hours: 11.74</div>
+                  </>
                 }
               />
-              <StatsCard isData={true} />
+            </div>
+            <div className="panel__conatainer__empty__row">
+              <StatsCard
+                isData={false}
+                heading="Damaged"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                data="lorem"
+              />
+              <StatsCard
+                isData={true}
+                heading="Processing Items"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                data="187 items to approve"
+              />
+              <StatsCard
+                isData={true}
+                heading="Manual Processing Required"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                data={
+                  <a href="https://www.google.com/">
+                    187 orders need manualordering
+                  </a>
+                }
+              />
+            </div>
+            <div className="panel__conatainer__empty__row">
+              <StatsCard
+                isData={false}
+                heading="Unshipped Orders"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                data="lorem"
+              />
+              <StatsCard
+                isData={false}
+                heading="Delayed Courier Deliveries"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                data="187 items to approve"
+              />
+              <StatsCard
+                isData={true}
+                heading="Requires Matching"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                data={
+                  <a href="https://www.google.com/">1298 requires matching</a>
+                }
+              />
+            </div>
+            <div className="panel__conatainer__empty__row">
+              <StatsCard
+                isData={true}
+                heading="Cancelled Orders By Seller"
+                infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
+                data="187 items to approve"
+              />
+              <div style={{ opacity: 0, width: "33%" }}></div>
+              <div style={{ opacity: 0, width: "33%" }}></div>
             </div>
           </div>
         </div>

@@ -77,6 +77,23 @@
 .panel__card__content__notes a:hover {
   color: darken($highlite, 10%);
 }
+.panel__card__content__statistics {
+  font-size: $normal-font-size;
+  color: $font-color;
+}
+.panel__card__content__statistics a {
+  margin-left: 0.5em;
+  font-size: $normal-font-size;
+  color: $highlite;
+  font-weight: 300;
+}
+.panel__card__content__statistics a:hover {
+  color: darken($highlite, 10%);
+}
+.panel__card__content__statistics__null {
+  font-size: $normal-font-size;
+  color: rgb(206, 206, 206);
+}
 @media (max-width: 700px) {
   .panel__conatainer__empty__row {
     flex-direction: column;
