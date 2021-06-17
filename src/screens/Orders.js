@@ -5,96 +5,103 @@ import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
 import { Switch, Route, Link } from "react-router-dom";
 import userImg from "../assets/userPic.png";
 
-function UsersRow() {
+function OrdersRow() {
   return (
     <Nav.Link className="panel__main__row">
-      <div className="panel__main__row__entry">23242</div>
+      <div className="panel__main__row__entry">#23242</div>
       <div className="panel__main__row__entry">
-        <img
-          src={userImg}
-          alt="userImg"
-          style={{ width: "40px", marginRight: "1em" }}
-        />
-        User Name
+        <img src={userImg} alt="userImg" style={{ width: "40px" }} />
       </div>
-      <div className="panel__main__row__entry">National ID</div>
-      <div className="panel__main__row__entry">XXXXXXXXX</div>
-      <div className="panel__main__row__entry">No</div>
+      <div className="panel__main__row__entry">Placed</div>
+      <div className="panel__main__row__entry">Processing</div>
+      <div className="panel__main__row__entry">36</div>
+      <div className="panel__main__row__entry">$345</div>
+      <div className="panel__main__row__entry">$3454</div>
       <div className="panel__main__row__entry">27 May 2020</div>
+      <div className="panel__main__row__entry">Abu Dabi</div>
+      <div className="panel__main__row__entry">
+        <button className="panel__main__row__entry__btn">
+          View Info
+          <div className="panel__main__row__entry__para">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+            possimus illo officiis quis velit odit. Voluptate et magni dolorem
+            neque!
+          </div>
+        </button>
+      </div>
       <div className="panel__main__row__entry">
         <div className="panel__main__row__entry__cta">
           <Button
             variant="link-btn"
             placeholder="Show"
-            toPath="/dashboard/users-details"
+            toPath="/dashboard/order-details"
           />
           <div className="panel__main__row__entry__cta__divider"></div>
-          <Button
-            variant="link"
-            toPath="/dashboard/users/reviews"
-            placeholder="Reviews"
-          />
-          <div className="panel__main__row__entry__cta__divider"></div>
-          <Button variant="btn-delete" placeholder="Remove" />
+          <button className="panel__main__row__entry__btn">
+            View Note
+            <div className="panel__main__row__entry__para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Provident possimus illo officiis quis velit odit. Voluptate et
+              magni dolorem neque!
+            </div>
+          </button>
         </div>
       </div>
     </Nav.Link>
   );
 }
-export default class Users extends React.Component {
+export default class Orders extends React.Component {
   render() {
     return (
       <div className="panel__conatainer">
-        <div className="panel__heading">Users</div>
+        <div className="panel__heading">All Orders</div>
         <div className="panel__main__plans">
           <div className="panel__main__role__manager__content">
             <div className="panel__main__freelancer">
               <div className="panel__main__heading__row">
                 <div className="panel__main__heading__row__entry">ID</div>
-                <div className="panel__main__heading__row__entry">User</div>
                 <div className="panel__main__heading__row__entry">
-                  Document Type
+                  Products Image
                 </div>
                 <div className="panel__main__heading__row__entry">
-                  Document Number
+                  Placed/Created
                 </div>
-                <div className="panel__main__heading__row__entry">Verified</div>
-                <div className="panel__main__heading__row__entry">Created</div>
-                <div
-                  className="panel__main__heading__row__entry"
-                  style={{ opacity: 0 }}
-                >
-                  Actions
+                <div className="panel__main__heading__row__entry">Status</div>
+                <div className="panel__main__heading__row__entry">
+                  Weight (kg)
                 </div>
-                <div
-                  className="panel__main__heading__row__entry"
-                  style={{ opacity: 0 }}
-                >
-                  Actions
+                <div className="panel__main__heading__row__entry">Cost</div>
+                <div className="panel__main__heading__row__entry">Revenue</div>
+                <div className="panel__main__heading__row__entry">
+                  Estimated Delivery
                 </div>
+                <div className="panel__main__heading__row__entry">Country</div>
+                <div className="panel__main__heading__row__entry">Info</div>
+                <div className="panel__main__heading__row__entry">Show</div>
+                <div className="panel__main__heading__row__entry">Note</div>
               </div>
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
+              <OrdersRow />
+              <OrdersRow />
+              <OrdersRow />
+              <OrdersRow />
+              <OrdersRow />
+              <OrdersRow />
+              <OrdersRow />
+              <OrdersRow />
+              <OrdersRow />
               <div className="page__slider">
                 <div className="slider">
-                  <Nav variant="pills" defaultActiveKey="/dashboard/users">
+                  <Nav variant="pills" defaultActiveKey="/dashboard/orders">
                     <Nav.Link
-                      to="/dashboard/users"
-                      href="/dashboard/users"
+                      to="/dashboard/orders"
+                      href="/dashboard/orders"
                       as={Link}
                       className="nav__link__horizontal"
                     >
                       1
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/orders"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-1"
@@ -102,7 +109,7 @@ export default class Users extends React.Component {
                       2
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/orders"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-2"
@@ -110,7 +117,7 @@ export default class Users extends React.Component {
                       3
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/orders"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-3"
@@ -118,7 +125,7 @@ export default class Users extends React.Component {
                       4
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/orders"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-4"
@@ -126,7 +133,7 @@ export default class Users extends React.Component {
                       5
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/orders"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-5"

@@ -135,7 +135,7 @@ body {
 .input__box {
   background-color: $primary !important;
   border: 1px solid $primary !important;
-  min-height: 40px !important;
+  min-height: 35px !important;
   font-size: $normal-font-size !important;
 }
 .input__box:hover {
@@ -168,7 +168,7 @@ body {
 .btn__cta {
   background: linear-gradient(90deg, $dark, $highlite) !important;
   border: none !important;
-  height: 40px !important;
+  height: 35px !important;
   font-size: $normal-font-size !important;
   cursor: pointer;
   color: $primary !important;
@@ -179,12 +179,28 @@ body {
   border-radius: 5px !important;
 }
 .btn__cta:hover {
-  background-color: darken($dark, 10%) !important;
+  background: linear-gradient(90deg, $dark, $highlite) !important;
+}
+.btn__cta__delete {
+  background: #e33e3e !important;
+  border: none !important;
+  height: 35px !important;
+  font-size: $normal-font-size !important;
+  cursor: pointer;
+  color: $primary !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 5px !important;
+}
+.btn__cta__delete:hover {
+  background-color: darken(#e33e3e, 10%) !important;
 }
 .btn__cta__upload {
   background-color: $font-color !important;
   border: none !important;
-  height: 40px !important;
+  height: 35px !important;
   font-size: $normal-font-size !important;
   cursor: pointer;
   color: $primary !important;
@@ -305,7 +321,7 @@ body {
   white-space: nowrap;
 }
 .nav__link__vertical__collapse:hover {
-  background-color: $primary !important;
+  background-color: darken($primary, 10%) !important;
   color: $font-color !important;
 }
 .nav__link__horizontal {
@@ -337,7 +353,7 @@ body {
   margin-right: 0.5em;
   display: flex;
   justify-content: center;
-  color: #b3b8bd;
+  color: lighten($font-color, 20%);
   font-size: $normal-font-size;
   font-weight: 800;
 }
@@ -369,6 +385,71 @@ body {
   font-size: $normal-font-size;
   color: $font-color;
   flex-wrap: wrap;
+  align-items: center;
+}
+.panel__main__row__entry__btn {
+  color: $highlite;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+.panel__main__row__entry__para {
+  width: 300px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  background-color: #ffffff;
+  color: $font-color;
+  padding: 1em;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 3;
+}
+.panel__main__row__entry__btn:hover {
+  color: darken($highlite, 10%);
+}
+.panel__main__row__entry__btn:hover .panel__main__row__entry__para {
+  display: flex;
+}
+.panel__main__row__entry__option {
+  width: 150px;
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  background-color: #ffffff;
+  color: $font-color;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 3;
+  padding: 1em 0.5em;
+  flex-direction: column;
+}
+.panel__main__row__entry__option__entry {
+  color: $font-color;
+  font-size: $normal-font-size !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin-bottom: 0.5em !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  height: 30px !important;
+  width: 100% !important;
+  padding: 0.7em 1em !important;
+  margin: 0em !important;
+  border-radius: 5px !important;
+}
+.panel__main__row__entry__option__entry:hover {
+  background-color: $primary !important;
+  color: darken($font-color, 10%);
+}
+.panel__main__row__entry__badge {
+  background-color: darken($primary, 10%);
+  padding: 0.5em 1em;
+  border-radius: 50px;
 }
 .screen__back__btn {
   background-color: transparent !important;

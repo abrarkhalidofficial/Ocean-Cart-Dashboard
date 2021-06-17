@@ -7,7 +7,11 @@ export default class ButtonComponent extends React.Component {
     const variant = this.props.variant;
     if (variant === "btn") {
       return (
-        <Button className="btn__cta" onClick={this.props.onClick}>
+        <Button
+          className="btn__cta"
+          onClick={this.props.onClick}
+          style={this.props.style}
+        >
           {this.props.placeholder}
         </Button>
       );
@@ -16,6 +20,18 @@ export default class ButtonComponent extends React.Component {
         <Nav.Link to={this.props.toPath} as={Link} className="btn__cta">
           {this.props.placeholder}
         </Nav.Link>
+      );
+    } else if (variant === "link-btn") {
+      return (
+        <Nav.Link to={this.props.toPath} as={Link} className="btn__cta__upload">
+          {this.props.placeholder}
+        </Nav.Link>
+      );
+    } else if (variant === "btn-delete") {
+      return (
+        <Button className="btn__cta__delete" onClick={this.props.onClick}>
+          {this.props.placeholder}
+        </Button>
       );
     } else if (variant === "upload-btn") {
       return (

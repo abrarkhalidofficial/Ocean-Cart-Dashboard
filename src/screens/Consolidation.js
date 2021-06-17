@@ -5,21 +5,11 @@ import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
 import { Switch, Route, Link } from "react-router-dom";
 import userImg from "../assets/userPic.png";
 
-function UsersRow() {
+function ConsolidationRow() {
   return (
     <Nav.Link className="panel__main__row">
-      <div className="panel__main__row__entry">23242</div>
-      <div className="panel__main__row__entry">
-        <img
-          src={userImg}
-          alt="userImg"
-          style={{ width: "40px", marginRight: "1em" }}
-        />
-        User Name
-      </div>
-      <div className="panel__main__row__entry">National ID</div>
-      <div className="panel__main__row__entry">XXXXXXXXX</div>
-      <div className="panel__main__row__entry">No</div>
+      <div className="panel__main__row__entry">#23242</div>
+      <div className="panel__main__row__entry">$345</div>
       <div className="panel__main__row__entry">27 May 2020</div>
       <div className="panel__main__row__entry">
         <div className="panel__main__row__entry__cta">
@@ -32,7 +22,7 @@ function UsersRow() {
           <Button
             variant="link"
             toPath="/dashboard/users/reviews"
-            placeholder="Reviews"
+            placeholder="Add"
           />
           <div className="panel__main__row__entry__cta__divider"></div>
           <Button variant="btn-delete" placeholder="Remove" />
@@ -41,60 +31,52 @@ function UsersRow() {
     </Nav.Link>
   );
 }
-export default class Users extends React.Component {
+export default class Consolidation extends React.Component {
   render() {
     return (
       <div className="panel__conatainer">
-        <div className="panel__heading">Users</div>
+        <div className="panel__heading">All Consolidations</div>
         <div className="panel__main__plans">
           <div className="panel__main__role__manager__content">
             <div className="panel__main__freelancer">
               <div className="panel__main__heading__row">
                 <div className="panel__main__heading__row__entry">ID</div>
-                <div className="panel__main__heading__row__entry">User</div>
+                <div className="panel__main__heading__row__entry">Name</div>
                 <div className="panel__main__heading__row__entry">
-                  Document Type
-                </div>
-                <div className="panel__main__heading__row__entry">
-                  Document Number
-                </div>
-                <div className="panel__main__heading__row__entry">Verified</div>
-                <div className="panel__main__heading__row__entry">Created</div>
-                <div
-                  className="panel__main__heading__row__entry"
-                  style={{ opacity: 0 }}
-                >
-                  Actions
+                  Friendly Name
                 </div>
                 <div
                   className="panel__main__heading__row__entry"
                   style={{ opacity: 0 }}
                 >
-                  Actions
+                  Action
                 </div>
               </div>
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
-              <UsersRow />
+              <ConsolidationRow />
+              <ConsolidationRow />
+              <ConsolidationRow />
+              <ConsolidationRow />
+              <ConsolidationRow />
+              <ConsolidationRow />
+              <ConsolidationRow />
+              <ConsolidationRow />
+              <ConsolidationRow />
               <div className="page__slider">
                 <div className="slider">
-                  <Nav variant="pills" defaultActiveKey="/dashboard/users">
+                  <Nav
+                    variant="pills"
+                    defaultActiveKey="/dashboard/consolidations"
+                  >
                     <Nav.Link
-                      to="/dashboard/users"
-                      href="/dashboard/users"
+                      to="/dashboard/consolidations"
+                      href="/dashboard/consolidations"
                       as={Link}
                       className="nav__link__horizontal"
                     >
                       1
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/consolidations"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-1"
@@ -102,7 +84,7 @@ export default class Users extends React.Component {
                       2
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/consolidations"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-2"
@@ -110,7 +92,7 @@ export default class Users extends React.Component {
                       3
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/consolidations"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-3"
@@ -118,7 +100,7 @@ export default class Users extends React.Component {
                       4
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/consolidations"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-4"
@@ -126,7 +108,7 @@ export default class Users extends React.Component {
                       5
                     </Nav.Link>
                     <Nav.Link
-                      to="/dashboard/users"
+                      to="/dashboard/consolidations"
                       as={Link}
                       className="nav__link__horizontal"
                       eventKey="link-5"

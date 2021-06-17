@@ -47,7 +47,7 @@ export default class SideBar extends React.Component {
                   eventKey="0"
                   className="nav__link__vertical__accordion"
                 >
-                  <span>Order</span>
+                  <span>Orders</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -66,67 +66,27 @@ export default class SideBar extends React.Component {
                   <div className="nav__link__vertical__accordion__collapse">
                     <Nav
                       variant="pills"
-                      defaultActiveKey="/dashboard/order-pending"
+                      // defaultActiveKey="/dashboard/orders"
                       className="sidebar__links"
                     >
                       <Nav.Item>
                         <Nav.Link
                           as={Link}
-                          href="/dashboard/order-pending"
-                          to="/dashboard/order-pending"
+                          href="/dashboard/orders"
+                          to="/dashboard/orders"
                           className="nav__link__vertical__collapse"
                         >
-                          Order Pending
+                          All Orders
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link
                           as={Link}
-                          to="/dashboard/order-delivered"
+                          to="/dashboard/orders-history"
                           className="nav__link__vertical__collapse"
                           eventKey="link-1"
                         >
-                          Order Delivered
-                        </Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link
-                          as={Link}
-                          to="/dashboard/order-canceled"
-                          className="nav__link__vertical__collapse"
-                          eventKey="link-2"
-                        >
-                          Order Canceled
-                        </Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link
-                          as={Link}
-                          to="/dashboard/products"
-                          className="nav__link__vertical__collapse"
-                          eventKey="link-3"
-                        >
                           Order History
-                        </Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link
-                          as={Link}
-                          to="/dashboard/order-details"
-                          className="nav__link__vertical__collapse"
-                          eventKey="link-4"
-                        >
-                          Order Details
-                        </Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link
-                          as={Link}
-                          to="/dashboard/order-tracking"
-                          className="nav__link__vertical__collapse"
-                          eventKey="link-5"
-                        >
-                          Order Tracking
                         </Nav.Link>
                       </Nav.Item>
                     </Nav>
@@ -146,7 +106,7 @@ export default class SideBar extends React.Component {
                   eventKey="0"
                   className="nav__link__vertical__accordion"
                 >
-                  <span>Product</span>
+                  <span>Products</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -165,7 +125,7 @@ export default class SideBar extends React.Component {
                   <div className="nav__link__vertical__accordion__collapse">
                     <Nav
                       variant="pills"
-                      defaultActiveKey="/dashboard/products"
+                      // defaultActiveKey="/dashboard/products"
                       className="sidebar__links"
                     >
                       <Nav.Item>
@@ -191,11 +151,21 @@ export default class SideBar extends React.Component {
                       <Nav.Item>
                         <Nav.Link
                           as={Link}
-                          to="/dashboard/inventory"
+                          to="/dashboard/promote"
                           className="nav__link__vertical__collapse"
-                          eventKey="link-2"
+                          eventKey="link-3"
                         >
-                          Inventory
+                          Promote
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          to="/dashboard/product-bulk-upload"
+                          className="nav__link__vertical__collapse"
+                          eventKey="link-4"
+                        >
+                          Product bulk upload
                         </Nav.Link>
                       </Nav.Item>
                     </Nav>
@@ -215,7 +185,7 @@ export default class SideBar extends React.Component {
                   eventKey="0"
                   className="nav__link__vertical__accordion"
                 >
-                  <span>Coupon</span>
+                  <span>Coupons</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -234,7 +204,7 @@ export default class SideBar extends React.Component {
                   <div className="nav__link__vertical__accordion__collapse">
                     <Nav
                       variant="pills"
-                      defaultActiveKey="/dashboard/coupons"
+                      // defaultActiveKey="/dashboard/coupons"
                       className="sidebar__links"
                     >
                       <Nav.Item>
@@ -244,7 +214,7 @@ export default class SideBar extends React.Component {
                           to="/dashboard/coupons"
                           className="nav__link__vertical__collapse"
                         >
-                          Coupons
+                          All Coupons
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
@@ -267,10 +237,335 @@ export default class SideBar extends React.Component {
             <Nav.Link
               as={Link}
               to="/dashboard/users"
-              eventKey="link-2"
               className="nav__link__vertical"
+              eventKey="link-5"
             >
               Users
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              eventKey="link-6"
+              className="nav__link__vertical__accordion__link"
+            >
+              <Accordion>
+                <Accordion.Toggle
+                  eventKey="0"
+                  className="nav__link__vertical__accordion"
+                >
+                  <span>Cash on Delivery</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 9 18"
+                    className="nav__link__vertical__accordion__icon"
+                  >
+                    <path
+                      id="Icon_ionic-md-arrow-dropdown"
+                      data-name="Icon ionic-md-arrow-dropdown"
+                      d="M9,13.5l9,9,9-9Z"
+                      transform="translate(-13.5 27) rotate(-90)"
+                    />
+                  </svg>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <div className="nav__link__vertical__accordion__collapse">
+                    <Nav
+                      variant="pills"
+                      // defaultActiveKey="/dashboard/cod"
+                      className="sidebar__links"
+                    >
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          href="/dashboard/cod"
+                          to="/dashboard/cod"
+                          className="nav__link__vertical__collapse"
+                        >
+                          All Cash on Delivery
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          to="/dashboard/add-cod"
+                          className="nav__link__vertical__collapse"
+                          eventKey="link-1"
+                        >
+                          Add Cash on Delivery
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          to="/dashboard/cod-bulk-upload"
+                          className="nav__link__vertical__collapse"
+                          eventKey="link-3"
+                        >
+                          Cash on Delivery bulk upload
+                        </Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                  </div>
+                </Accordion.Collapse>
+              </Accordion>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              eventKey="link-7"
+              className="nav__link__vertical__accordion__link"
+            >
+              <Accordion>
+                <Accordion.Toggle
+                  eventKey="0"
+                  className="nav__link__vertical__accordion"
+                >
+                  <span>Bank Deposite</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 9 18"
+                    className="nav__link__vertical__accordion__icon"
+                  >
+                    <path
+                      id="Icon_ionic-md-arrow-dropdown"
+                      data-name="Icon ionic-md-arrow-dropdown"
+                      d="M9,13.5l9,9,9-9Z"
+                      transform="translate(-13.5 27) rotate(-90)"
+                    />
+                  </svg>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <div className="nav__link__vertical__accordion__collapse">
+                    <Nav
+                      variant="pills"
+                      // defaultActiveKey="/dashboard/bank-deposite"
+                      className="sidebar__links"
+                    >
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          href="/dashboard/bank-deposite"
+                          to="/dashboard/bank-deposite"
+                          className="nav__link__vertical__collapse"
+                        >
+                          All Bank Deposite
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          to="/dashboard/add-bank-deposite"
+                          className="nav__link__vertical__collapse"
+                          eventKey="link-1"
+                        >
+                          Add Bank Deposite
+                        </Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                  </div>
+                </Accordion.Collapse>
+              </Accordion>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              eventKey="link-8"
+              className="nav__link__vertical__accordion__link"
+            >
+              <Accordion>
+                <Accordion.Toggle
+                  eventKey="0"
+                  className="nav__link__vertical__accordion"
+                >
+                  <span>Consolidation</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 9 18"
+                    className="nav__link__vertical__accordion__icon"
+                  >
+                    <path
+                      id="Icon_ionic-md-arrow-dropdown"
+                      data-name="Icon ionic-md-arrow-dropdown"
+                      d="M9,13.5l9,9,9-9Z"
+                      transform="translate(-13.5 27) rotate(-90)"
+                    />
+                  </svg>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <div className="nav__link__vertical__accordion__collapse">
+                    <Nav
+                      variant="pills"
+                      // defaultActiveKey="/dashboard/consolidations"
+                      className="sidebar__links"
+                    >
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          href="/dashboard/consolidations"
+                          to="/dashboard/consolidations"
+                          className="nav__link__vertical__collapse"
+                        >
+                          All Consolidations
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          to="/dashboard/add-consolidation"
+                          className="nav__link__vertical__collapse"
+                          eventKey="link-1"
+                        >
+                          Add Consolidation
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          to="/dashboard/fix-items"
+                          className="nav__link__vertical__collapse"
+                          eventKey="link-2"
+                        >
+                          Fix missing items
+                        </Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                  </div>
+                </Accordion.Collapse>
+              </Accordion>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              eventKey="link-9"
+              className="nav__link__vertical__accordion__link"
+            >
+              <Accordion>
+                <Accordion.Toggle
+                  eventKey="0"
+                  className="nav__link__vertical__accordion"
+                >
+                  <span>Store / Supplier</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 9 18"
+                    className="nav__link__vertical__accordion__icon"
+                  >
+                    <path
+                      id="Icon_ionic-md-arrow-dropdown"
+                      data-name="Icon ionic-md-arrow-dropdown"
+                      d="M9,13.5l9,9,9-9Z"
+                      transform="translate(-13.5 27) rotate(-90)"
+                    />
+                  </svg>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <div className="nav__link__vertical__accordion__collapse">
+                    <Nav
+                      variant="pills"
+                      // defaultActiveKey="/dashboard/store-supplier-list"
+                      className="sidebar__links"
+                    >
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          href="/dashboard/store-supplier-list"
+                          to="/dashboard/store-supplier-list"
+                          className="nav__link__vertical__collapse"
+                        >
+                          All Store / Supplier
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          to="/dashboard/add-store-supplier"
+                          className="nav__link__vertical__collapse"
+                          eventKey="link-1"
+                        >
+                          Add Store / Supplier
+                        </Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                  </div>
+                </Accordion.Collapse>
+              </Accordion>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              to="/dashboard/inventory"
+              className="nav__link__vertical"
+              eventKey="link-10"
+            >
+              Invetory
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              as={Link}
+              eventKey="link-11"
+              className="nav__link__vertical__accordion__link"
+            >
+              <Accordion>
+                <Accordion.Toggle
+                  eventKey="0"
+                  className="nav__link__vertical__accordion"
+                >
+                  <span>Movement</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 9 18"
+                    className="nav__link__vertical__accordion__icon"
+                  >
+                    <path
+                      id="Icon_ionic-md-arrow-dropdown"
+                      data-name="Icon ionic-md-arrow-dropdown"
+                      d="M9,13.5l9,9,9-9Z"
+                      transform="translate(-13.5 27) rotate(-90)"
+                    />
+                  </svg>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <div className="nav__link__vertical__accordion__collapse">
+                    <Nav
+                      variant="pills"
+                      // defaultActiveKey="/dashboard/store-movement"
+                      className="sidebar__links"
+                    >
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          href="/dashboard/movement"
+                          to="/dashboard/movement"
+                          className="nav__link__vertical__collapse"
+                        >
+                          All Movement
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link
+                          as={Link}
+                          to="/dashboard/add-movement"
+                          className="nav__link__vertical__collapse"
+                          eventKey="link-1"
+                        >
+                          Add Movement
+                        </Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                  </div>
+                </Accordion.Collapse>
+              </Accordion>
             </Nav.Link>
           </Nav.Item>
         </Nav>
