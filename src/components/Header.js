@@ -42,7 +42,7 @@ export default function Header({ search }) {
       <Navbar.Brand as={Link} to="/" className="brand__name">
         OC
       </Navbar.Brand>
-      <div className="catagory__select">
+      {/* <div className="catagory__select">
         <Select
           // defaultValue={}
           name="colors"
@@ -51,7 +51,7 @@ export default function Header({ search }) {
           classNamePrefix="select"
           placeholder="Explore"
         />
-      </div>
+      </div> */}
       <div
         className=""
         style={{ flex: 1, display: "flex", justifyContent: "flex-end" }}

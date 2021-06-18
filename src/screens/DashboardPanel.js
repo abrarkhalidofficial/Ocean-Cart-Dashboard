@@ -105,7 +105,7 @@ export default class DashboardPanel extends React.Component {
         </div>
         <div className="panel__conatainer__empty__row">
           <Card
-            heading="Lorem"
+            heading="Note"
             infoContent="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam."
           >
             <div className="panel__card__content__notes">
@@ -118,11 +118,20 @@ export default class DashboardPanel extends React.Component {
             </div>
             <div className="panel__card__content__notes">
               Delay in order:
-              <span>2 days</span>
+              <span>
+                2 days Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Atque id veniam delectus fugit aliquam quis impedit sapiente
+                quas consequatur eligendi cum facere est sit eveniet adipisci
+                corrupti consequuntur, velit repellendus?
+              </span>
             </div>
             <div className="panel__card__content__notes">
               Amount / Method:
-              <span>$50 / lorem</span>
+              <span>
+                $50 / Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore adipisci possimus consequatur corrupti, mollitia illo
+                voluptas. Laborum quaerat natus dolorem.
+              </span>
             </div>
             <div className="panel__card__content__notes">
               DB item:

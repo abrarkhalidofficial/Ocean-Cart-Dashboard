@@ -65,7 +65,8 @@
   margin-left: 0.5em;
   font-size: $normal-font-size;
   color: $font-color;
-  max-width: 70%;
+  flex: 1;
+  max-width: 75%;
   font-weight: 300;
 }
 .panel__card__content__notes a {
