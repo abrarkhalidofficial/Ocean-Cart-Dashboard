@@ -31,7 +31,7 @@ function UsersRow() {
           <div className="panel__main__row__entry__cta__divider"></div>
           <Button
             variant="link"
-            toPath="/dashboard/users/reviews"
+            toPath="/dashboard/user-review"
             placeholder="Reviews"
           />
           <div className="panel__main__row__entry__cta__divider"></div>

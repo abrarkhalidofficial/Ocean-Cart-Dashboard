@@ -18,6 +18,13 @@ import CashOnDelivery from "./CashOnDelivery";
 import Consolidation from "./Consolidation";
 import StoreSupplier from "./StoreSupplier";
 import Movements from "./Movements";
+import ProductsReviews from "./ProductsReview";
+import ProductBulkUpload from "./ProductBulkUpload";
+import CashOnDeliveryBulkUpload from "./CashOnDeliveryBulkUpload";
+import ProductPromote from "./ProductPromote";
+import AddCashOnDelivery from "./AddCashOnDelivery";
+import AddBankDeposit from "./AddBankDeposit";
+import AddConsolidation from "./AddConsolidation";
 
 export default class Dashboard extends React.Component {
   render() {
@@ -76,6 +83,39 @@ export default class Dashboard extends React.Component {
             </Route>
             <Route path="/dashboard/store-supplier-list">
               <StoreSupplier />
+            </Route>
+            <Route path="/dashboard/product-review">
+              <ProductsReviews screenName="Product's Reviews" />
+            </Route>
+            <Route path="/dashboard/user-review">
+              <ProductsReviews screenName="Users's Reviews" />
+            </Route>
+            <Route path="/dashboard/product-bulk-upload">
+              <ProductBulkUpload />
+            </Route>
+            <Route path="/dashboard/cod-bulk-upload">
+              <CashOnDeliveryBulkUpload />
+            </Route>
+            <Route path="/dashboard/promote">
+              <ProductPromote />
+            </Route>
+            <Route path="/dashboard/add-cod">
+              <AddCashOnDelivery screenName="Add Cash On Delivery" />
+            </Route>
+            <Route path="/dashboard/edit-cod">
+              <AddCashOnDelivery screenName="Edit Cash On Delivery" />
+            </Route>
+            <Route path="/dashboard/add-bank-deposite">
+              <AddBankDeposit screenName="Add Bank Deposit" />
+            </Route>
+            <Route path="/dashboard/edit-bank-deposite">
+              <AddBankDeposit screenName="Edit Bank Deposit" />
+            </Route>
+            <Route path="/dashboard/add-consolidation">
+              <AddConsolidation screenName="Add Consolidaion" />
+            </Route>
+            <Route path="/dashboard/edit-consolidation">
+              <AddConsolidation screenName="Edit Consolidation" />
             </Route>
           </div>
         </Switch>

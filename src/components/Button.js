@@ -45,6 +45,12 @@ export default class ButtonComponent extends React.Component {
           {this.props.placeholder}
         </a>
       );
+    } else if (variant === "download-btn") {
+      return (
+        <a className="btn__cta__upload" href={this.props.downloadLink}>
+          {this.props.placeholder}
+        </a>
+      );
     }
   }
 }

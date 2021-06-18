@@ -19,8 +19,16 @@ function BankDepositsRow() {
           <Button
             variant="link-btn"
             placeholder="Show"
-            toPath="/dashboard/order-details"
+            toPath="/dashboard/bank-deposit-details"
           />
+          <div className="panel__main__row__entry__cta__divider"></div>
+          <Button
+            variant="link"
+            toPath="/dashboard/edit-bank-deposite"
+            placeholder="Edit"
+          />
+          <div className="panel__main__row__entry__cta__divider"></div>
+          <Button variant="btn-delete" placeholder="Remove" />
         </div>
       </div>
     </Nav.Link>
@@ -45,7 +53,12 @@ export default class BankDeposits extends React.Component {
                   className="panel__main__heading__row__entry"
                   style={{ width: "250px" }}
                 ></div>
-                <div className="panel__main__heading__row__entry">Show</div>
+                <div
+                  className="panel__main__heading__row__entry"
+                  style={{ opacity: 0 }}
+                >
+                  ------------------------------
+                </div>
               </div>
               <BankDepositsRow />
               <BankDepositsRow />

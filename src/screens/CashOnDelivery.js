@@ -18,6 +18,14 @@ function CashOnDeliveryRow() {
             placeholder="Show"
             toPath="/dashboard/cod-details"
           />
+          <div className="panel__main__row__entry__cta__divider"></div>
+          <Button
+            variant="link"
+            toPath="/dashboard/edit-cod"
+            placeholder="Edit"
+          />
+          <div className="panel__main__row__entry__cta__divider"></div>
+          <Button variant="btn-delete" placeholder="Remove" />
         </div>
       </div>
     </Nav.Link>
