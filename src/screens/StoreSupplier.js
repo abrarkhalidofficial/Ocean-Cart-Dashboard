@@ -23,13 +23,13 @@ function StoreSupplierRow() {
           <Button
             variant="link-btn"
             placeholder="Show"
-            toPath="/dashboard/users-details"
+            toPath="/dashboard/store-supplier-details"
           />
           <div className="panel__main__row__entry__cta__divider"></div>
           <Button
             variant="link"
-            toPath="/dashboard/users/reviews"
-            placeholder="Add"
+            toPath="/dashboard/edit-store-supplier"
+            placeholder="Edit"
           />
           <div className="panel__main__row__entry__cta__divider"></div>
           <Button variant="btn-delete" placeholder="Remove" />

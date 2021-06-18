@@ -25,6 +25,9 @@ import ProductPromote from "./ProductPromote";
 import AddCashOnDelivery from "./AddCashOnDelivery";
 import AddBankDeposit from "./AddBankDeposit";
 import AddConsolidation from "./AddConsolidation";
+import FixMissingItems from "./FixMissingItems";
+import AddStoreSupplier from "./AddStoreSupplier";
+import AddMovement from "./AddMovement";
 
 export default class Dashboard extends React.Component {
   render() {
@@ -116,6 +119,21 @@ export default class Dashboard extends React.Component {
             </Route>
             <Route path="/dashboard/edit-consolidation">
               <AddConsolidation screenName="Edit Consolidation" />
+            </Route>
+            <Route path="/dashboard/add-store-supplier">
+              <AddStoreSupplier screenName="Add Store / Supplier" />
+            </Route>
+            <Route path="/dashboard/edit-store-supplier">
+              <AddStoreSupplier screenName="Edit Store / Supplier" />
+            </Route>
+            <Route path="/dashboard/add-movement">
+              <AddMovement screenName="Add Movement" />
+            </Route>
+            <Route path="/dashboard/edit-movement">
+              <AddMovement screenName="Edit Movement" />
+            </Route>
+            <Route path="/dashboard/fix-items">
+              <FixMissingItems />
             </Route>
           </div>
         </Switch>
