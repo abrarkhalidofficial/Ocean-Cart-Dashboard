@@ -71,4 +71,13 @@
   .panel__main__role__manager__input__row {
     width: 100%;
   }
+  .panel__main__selctors__filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .panel__main__selctors__filters__entity {
+    width: 100% !important;
+    margin-top: 1em;
+    margin-left: 0em;
+  }
 }
