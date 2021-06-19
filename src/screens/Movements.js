@@ -108,15 +108,6 @@ export default class Movements extends React.Component {
               classNamePrefix="select"
             />
           </div>
-          <div className="panel__main__selctors__filters__entity">
-            <Select
-              // defaultValue={[colourOptions[2], colourOptions[3]]}
-              name="colors"
-              options={Options}
-              className="basic-multi-select"
-              classNamePrefix="select"
-            />
-          </div>
         </div>
         <div className="panel__main__plans">
           <div className="panel__main__role__manager__content">

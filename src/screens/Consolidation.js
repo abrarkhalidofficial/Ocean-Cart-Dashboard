@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
 import { Switch, Route, Link } from "react-router-dom";
 import userImg from "../assets/userPic.png";
+import InputboxComponent from "../components/Inputbox";
 
 function ConsolidationRow() {
   return (
@@ -30,6 +31,22 @@ export default class Consolidation extends React.Component {
     return (
       <div className="panel__conatainer">
         <div className="panel__heading">All Consolidations</div>
+        <div className="panel__main__selctors__filters">
+        <div className="panel__main__selctors__filters__entity">
+            <InputboxComponent
+              placeholder="ID"
+              ClassName="input__box"
+              type="text"
+            />
+          </div>
+          <div className="panel__main__selctors__filters__entity">
+            <InputboxComponent
+              placeholder="Name"
+              ClassName="input__box"
+              type="text"
+            />
+          </div>
+        </div>
         <div className="panel__main__plans">
           <div className="panel__main__role__manager__content">
             <div className="panel__main__freelancer">
