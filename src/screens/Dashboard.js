@@ -28,6 +28,11 @@ import AddConsolidation from "./AddConsolidation";
 import FixMissingItems from "./FixMissingItems";
 import AddStoreSupplier from "./AddStoreSupplier";
 import AddMovement from "./AddMovement";
+import OrderDetails from "./OrderDetails";
+import CashOnDeliveryDetails from "./CashOnDeliveryDetails";
+import BankDepositDetails from "./BankDepositDetails";
+import StoreSupplierDetails from "./StoreSupplierDetails";
+import MovementDetails from "./MovementDetails";
 
 export default class Dashboard extends React.Component {
   render() {
@@ -37,6 +42,9 @@ export default class Dashboard extends React.Component {
         <Switch>
           <Route path="/dashboard" exact>
             <DashboardPanel />
+          </Route>
+          <Route path="/dashboard/order-details" exact>
+            <OrderDetails />
           </Route>
           <div className="main">
             <Route path="/dashboard/add-product">
@@ -134,6 +142,18 @@ export default class Dashboard extends React.Component {
             </Route>
             <Route path="/dashboard/fix-items">
               <FixMissingItems />
+            </Route>
+            <Route path="/dashboard/cod-details">
+              <CashOnDeliveryDetails />
+            </Route>
+            <Route path="/dashboard/bank-deposit-details">
+              <BankDepositDetails />
+            </Route>
+            <Route path="/dashboard/store-supplier-details">
+              <StoreSupplierDetails />
+            </Route>
+            <Route path="/dashboard/movement-details">
+              <MovementDetails />
             </Route>
           </div>
         </Switch>

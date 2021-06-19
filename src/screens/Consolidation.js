@@ -14,12 +14,6 @@ function ConsolidationRow() {
       <div className="panel__main__row__entry">
         <div className="panel__main__row__entry__cta">
           <Button
-            variant="link-btn"
-            placeholder="Show"
-            toPath="/dashboard/consolidation-details"
-          />
-          <div className="panel__main__row__entry__cta__divider"></div>
-          <Button
             variant="link"
             toPath="/dashboard/edit-consolidation"
             placeholder="Edit"

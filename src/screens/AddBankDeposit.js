@@ -7,7 +7,7 @@ import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
 import { Switch, Route, Link } from "react-router-dom";
 import InputboxComponent from "../components/Inputbox";
 
-export default function AddCashOnDelivery({ screenName }) {
+export default function AddBankDeposit({ screenName }) {
   const Options = [
     { value: "Fixed Cart Discount", label: "Fixed Cart Discount" },
     { value: "strawberry", label: "Strawberry" },
