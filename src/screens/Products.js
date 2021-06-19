@@ -123,15 +123,46 @@ export default class Products extends React.Component {
     return (
       <div className="panel__conatainer">
         <div className="panel__heading">All Products</div>
-        <div className="panel__main__plans">
-          <InputboxComponent placeholder="Search" type="search" />
-          <Select
-            // defaultValue={[colourOptions[2], colourOptions[3]]}
-            name="colors"
-            options={Options}
-            className="basic-multi-select"
-            classNamePrefix="select"
+        <div className="panel__main__selctors__filters">
+          <InputboxComponent
+            placeholder="Search"
+            ClassName="input__box"
+            type="search"
           />
+          <div className="panel__main__selctors__filters__entity">
+            <InputboxComponent
+              placeholder="SKU"
+              ClassName="input__box"
+              type="text"
+            />
+          </div>
+          <div className="panel__main__selctors__filters__entity">
+            <Select
+              // defaultValue={[colourOptions[2], colourOptions[3]]}
+              name="colors"
+              options={Options}
+              className="basic-multi-select"
+              classNamePrefix="select"
+            />
+          </div>
+          <div className="panel__main__selctors__filters__entity">
+            <Select
+              // defaultValue={[colourOptions[2], colourOptions[3]]}
+              name="colors"
+              options={Options}
+              className="basic-multi-select"
+              classNamePrefix="select"
+            />
+          </div>
+          <div className="panel__main__selctors__filters__entity">
+            <Select
+              // defaultValue={[colourOptions[2], colourOptions[3]]}
+              name="colors"
+              options={Options}
+              className="basic-multi-select"
+              classNamePrefix="select"
+            />
+          </div>
         </div>
         <div className="panel__main__plans">
           <div className="panel__main__role__manager__content">

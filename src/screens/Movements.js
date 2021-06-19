@@ -4,6 +4,8 @@ import Button from "../components/Button";
 import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
 import { Switch, Route, Link } from "react-router-dom";
 import userImg from "../assets/userPic.png";
+import InputboxComponent from "../components/Inputbox";
+import Select from "react-select";
 
 function MovementsRow() {
   return (
@@ -79,9 +81,43 @@ function MovementsRow() {
 }
 export default class Movements extends React.Component {
   render() {
+    const Options = [
+      { value: "Fixed Cart Discount", label: "Fixed Cart Discount" },
+      { value: "strawberry", label: "Strawberry" },
+      { value: "vanilla", label: "Vanilla" },
+    ];
     return (
       <div className="panel__conatainer">
         <div className="panel__heading">All Movements</div>
+        <div className="panel__main__selctors__filters">
+        <div className="panel__main__selctors__filters__entity">
+            <Select
+              // defaultValue={[colourOptions[2], colourOptions[3]]}
+              name="colors"
+              options={Options}
+              className="basic-multi-select"
+              classNamePrefix="select"
+            />
+          </div>
+          <div className="panel__main__selctors__filters__entity">
+            <Select
+              // defaultValue={[colourOptions[2], colourOptions[3]]}
+              name="colors"
+              options={Options}
+              className="basic-multi-select"
+              classNamePrefix="select"
+            />
+          </div>
+          <div className="panel__main__selctors__filters__entity">
+            <Select
+              // defaultValue={[colourOptions[2], colourOptions[3]]}
+              name="colors"
+              options={Options}
+              className="basic-multi-select"
+              classNamePrefix="select"
+            />
+          </div>
+        </div>
         <div className="panel__main__plans">
           <div className="panel__main__role__manager__content">
             <div className="panel__main__freelancer">
