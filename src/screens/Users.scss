@@ -61,6 +61,8 @@
 .panel__main__selctors__filters {
   display: flex;
   margin-bottom: 1em;
+  max-width: 1000px;
+  align-items: center;
 }
 .panel__main__selctors__filters__entity {
   width: 300px;
