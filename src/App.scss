@@ -28,7 +28,7 @@ p {
 body {
   background: url("./assets/loginBg.png"), no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -337,6 +337,14 @@ body {
   display: flex;
   flex-direction: column;
   width: fit-content;
+}
+.select__control {
+  border: none !important;
+  background-color: $primary !important;
+  font-size: $normal-font-size !important;
+  // height: 35px !important;
+  // max-height: 35px !important;
+  // min-height: 35px !important;
 }
 .details__row__property {
   font-size: $normal-font-size;
@@ -688,6 +696,72 @@ body {
 }
 .order__details__customer {
   max-width: 500px;
+}
+.status__col {
+  display: flex;
+  align-items: center;
+}
+.status {
+  font-size: $normal-font-size !important;
+  text-transform: uppercase;
+  margin-bottom: 0em !important;
+  color: white !important;
+  padding: 0.5em 1em !important;
+  font-size: $normal-font-size !important;
+  user-select: none;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  width: 80px !important;
+  height: 36px !important;
+  font-weight: 300 !important;
+}
+.status-live {
+  background-color: #09c956;
+}
+.status-closed {
+  background-color: #ff4d4d;
+}
+.status-hold {
+  background-color: #ffae0c;
+}
+.status__dropdown {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.status__option {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 10px !important;
+  margin-right: 10px !important;
+}
+.posting__nav__link {
+  background-color: $primary;
+  color: $font-color;
+  font-size: $normal-font-size;
+  border: 1px solid $primary;
+  margin-bottom: 1em;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.posting__nav__link:hover {
+  background-color: $light-green;
+  color: $font-color;
+  border-bottom-color: $highlite;
+}
+.posting__nav__link__badge {
+  width: fit-content !important;
+  min-width: 20px !important;
+  height: 20px !important;
+  margin-right: 10px !important;
+  border-radius: 20px !important;
+  font-size: $normal-font-size - 2px !important;
+  color: $primary !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0.5em !important;
 }
 @media (max-width: 700px) {
   .panel__card {
