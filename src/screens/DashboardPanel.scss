@@ -101,6 +101,38 @@
   font-weight: bold;
   margin-bottom: 1em;
 }
+.bot__panel {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 3;
+}
+.bot__panel__cta__primary {
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0em !important;
+  outline: none !important;
+  border-radius: 50% !important;
+}
+.bot__panel__cta button svg {
+  width: 100px;
+  height: 100px;
+}
+.bot__panel__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  padding: 1em 2em;
+  background-color: $primary;
+  border-radius: 10px;
+  margin-right: 1em;
+}
 @media (max-width: 700px) {
   .panel__conatainer__empty__row {
     flex-direction: column;

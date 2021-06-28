@@ -252,8 +252,8 @@ body {
 }
 .nav__link__vertical {
   background-color: transparent;
-  font-size: $normal-font-size;
-  color: $font-color;
+  font-size: $normal-font-size !important;
+  color: $font-color !important;
   padding: 0.7em 1em !important;
   display: flex !important;
   align-items: center !important;
@@ -307,8 +307,8 @@ body {
   background-color: $primary;
 }
 .nav__link__vertical:hover {
-  background-color: darken($primary, 10%);
-  color: $font-color;
+  background-color: darken($primary, 10%) !important;
+  color: $font-color !important;
 }
 .nav__link__vertical__collapse {
   background-color: transparent !important;
@@ -736,19 +736,19 @@ body {
   margin-right: 10px !important;
 }
 .posting__nav__link {
-  background-color: $primary;
-  color: $font-color;
-  font-size: $normal-font-size;
-  border: 1px solid $primary;
-  margin-bottom: 1em;
+  background-color: $primary !important;
+  color: $font-color !important;
+  font-size: $normal-font-size !important;
+  border: 1px solid $primary !important;
+  margin-bottom: 1em !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
 }
 .posting__nav__link:hover {
-  background-color: $light-green;
-  color: $font-color;
-  border-bottom-color: $highlite;
+  background-color: $light-green !important;
+  color: $font-color !important;
+  border-bottom-color: $highlite !important;
 }
 .posting__nav__link__badge {
   width: fit-content !important;
