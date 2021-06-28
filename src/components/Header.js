@@ -73,9 +73,9 @@ export default function Header({ search }) {
                 d="M11.6,25.8H6.867A2.367,2.367,0,0,1,4.5,23.437V6.867A2.367,2.367,0,0,1,6.867,4.5H11.6"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
               />
               <path
                 id="Path_702"
@@ -84,9 +84,9 @@ export default function Header({ search }) {
                 transform="translate(-4.114 -1.266)"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
               />
               <path
                 id="Path_703"
@@ -95,9 +95,9 @@ export default function Header({ search }) {
                 transform="translate(-1.899 -2.848)"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
               />
             </g>
           </svg>
