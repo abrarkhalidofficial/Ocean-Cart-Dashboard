@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import Select from "react-select";
-import BtnComponent from "./Button";
+import { Navbar, Nav } from "react-bootstrap";
 
 export default function Header({ search }) {
   const [navbar, setNavbar] = useState(false);

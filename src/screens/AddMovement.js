@@ -1,10 +1,7 @@
 import React from "react";
 import "./AddCoupon.scss";
-import productImg from "../assets/productPic.png";
 import Button from "../components/Button";
 import Select from "react-select";
-import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
-import { Switch, Route, Link } from "react-router-dom";
 import InputboxComponent from "../components/Inputbox";
 
 export default function AddMovement({ screenName }) {

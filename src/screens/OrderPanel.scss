@@ -36,13 +36,6 @@
   display: flex;
   flex-direction: column;
 }
-.track__order__component__line {
-  width: 80%;
-  background-color: $primary;
-  height: 5px;
-  border-radius: 5px;
-  margin: 1.5em auto;
-}
 
 .track__order__component__top {
   padding: 2em;
@@ -91,7 +84,6 @@
 }
 
 .track__order__component__bottom {
-  background-color: #f8f8f8;
   padding: 2em;
   border-radius: 8px;
 }

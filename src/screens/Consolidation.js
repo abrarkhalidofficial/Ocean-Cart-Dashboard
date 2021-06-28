@@ -1,38 +1,17 @@
 import React from "react";
 import "./Users.scss";
 import Button from "../components/Button";
-import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
-import { Switch, Route, Link } from "react-router-dom";
-import userImg from "../assets/userPic.png";
+import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import InputboxComponent from "../components/Inputbox";
-
-function ConsolidationRow() {
-  return (
-    <Nav.Link className="panel__main__row">
-      <div className="panel__main__row__entry">#23242</div>
-      <div className="panel__main__row__entry">$345</div>
-      <div className="panel__main__row__entry">27 May 2020</div>
-      <div className="panel__main__row__entry">
-        <div className="panel__main__row__entry__cta">
-          <Button
-            variant="link"
-            toPath="/dashboard/edit-consolidation"
-            placeholder="Edit"
-          />
-          <div className="panel__main__row__entry__cta__divider"></div>
-          <Button variant="btn-delete" placeholder="Remove" />
-        </div>
-      </div>
-    </Nav.Link>
-  );
-}
+import ConsolidationRow from "../components/ConsolidationRow";
 export default class Consolidation extends React.Component {
   render() {
     return (
       <div className="panel__conatainer">
         <div className="panel__heading">All Consolidations</div>
         <div className="panel__main__selctors__filters">
-        <div className="panel__main__selctors__filters__entity">
+          <div className="panel__main__selctors__filters__entity">
             <InputboxComponent
               placeholder="ID"
               ClassName="input__box"

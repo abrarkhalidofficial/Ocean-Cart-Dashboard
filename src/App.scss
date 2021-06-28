@@ -257,7 +257,6 @@ body {
   padding: 0.7em 1em !important;
   display: flex !important;
   align-items: center !important;
-  margin-bottom: 0.5em !important;
   white-space: nowrap;
 }
 
@@ -365,19 +364,23 @@ body {
   color: darken($highlite, 10%);
 }
 .nav__link__horizontal {
-  background-color: $primary;
-  color: $dark;
-  font-size: $normal-font-size;
-  border: 1px solid $primary;
-  margin-bottom: 1em;
+  background-color: $primary !important;
+  color: $highlite !important;
+  font-size: $normal-font-size !important;
+  border: 1px solid $primary !important;
+  margin-bottom: 1em !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
 }
 .nav__link__horizontal:hover {
-  background-color: $light-green;
-  color: $dark;
-  border-bottom-color: $dark;
+  background-color: $light-green !important;
+  color: $highlite !important;
+  border-bottom-color: $highlite !important;
+}
+.nav__link__horizontal:focus,
+.nav__link__horizontal:active {
+  color: $primary !important;
 }
 .panel__main__heading__row {
   display: flex;
@@ -468,7 +471,7 @@ body {
   flex-direction: column;
 }
 .panel__main__row__entry__option__entry {
-  color: $font-color;
+  color: $font-color !important;
   font-size: $normal-font-size !important;
   background-color: transparent !important;
   border: none !important;
@@ -484,7 +487,26 @@ body {
 }
 .panel__main__row__entry__option__entry:hover {
   background-color: $primary !important;
-  color: darken($font-color, 10%);
+  color: darken($font-color, 10%) !important;
+}
+.panel__main__row__entry__option__entry__delete {
+  color: #e33e3e !important;
+  font-size: $normal-font-size !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin-bottom: 0.5em !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  height: 30px !important;
+  width: 100% !important;
+  padding: 0.7em 1em !important;
+  margin: 0em !important;
+  border-radius: 5px !important;
+}
+.panel__main__row__entry__option__entry__delete:hover {
+  background-color: $primary !important;
+  color: darken(#e33e3e, 10%) !important;
 }
 .panel__main__row__entry__badge {
   background-color: darken($primary, 10%);

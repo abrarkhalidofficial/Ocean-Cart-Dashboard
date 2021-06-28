@@ -4,12 +4,6 @@ import Button from "../components/Button";
 import InputboxComponent from "../components/Inputbox";
 
 export default function FixMissingItems({ screenName }) {
-  const Options = [
-    { value: "Fixed Cart Discount", label: "Fixed Cart Discount" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
-  ];
-  const [showCatagoryEdit, setShowCatagoryEdit] = React.useState(false);
   return (
     <div className="panel__conatainer">
       <div className="panel__heading">Fix Missing Items</div>

@@ -3,7 +3,6 @@ import SideBar from "../components/SideBar";
 import "./Dashboard.scss";
 import { Switch, Route } from "react-router-dom";
 import DashboardPanel from "./DashboardPanel";
-import OrderPanel from "./OrderPanel";
 import AddProduct from "./AddProduct";
 import AddCoupon from "./AddCoupon";
 import Users from "./Users";
@@ -43,7 +42,7 @@ export default class Dashboard extends React.Component {
           <Route path="/dashboard" exact>
             <DashboardPanel />
           </Route>
-          <Route path="/dashboard/order-details" exact>
+          <Route path="/dashboard/order-details">
             <OrderDetails />
           </Route>
           <div className="main">

@@ -1,9 +1,6 @@
 import React from "react";
 import "./UsersDetails.scss";
 import Button from "../components/Button";
-import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
-import { Switch, Route, Link } from "react-router-dom";
-import InputBox from "../components/Inputbox";
 import DetailsRow from "../components/DetailsRow";
 
 export default class CashOnDeliveryDetails extends React.Component {

@@ -1,38 +1,14 @@
 import React from "react";
 import "./DashboardPanel.scss";
 import Card from "../components/Card";
-import productPic from "../assets/productPic.png";
 import { Link } from "react-router-dom";
-import { Nav } from "react-bootstrap";
 import Button from "../components/Button";
 import DetailsRow from "../components/DetailsRow";
 import InputboxComponent from "../components/Inputbox";
 import barcodePic from "../assets/barcodePic.png";
 import Select from "react-select";
 import TrackOrderProduct from "../components/TrackOrderProduct";
-
-const ProductList = () => {
-  return (
-    <Nav.Link className="order__details__product__list__entry">
-      <div className="order__details__product__list__entry">
-        <div className="order__details__product__list__entry__left">
-          <img
-            src={productPic}
-            alt="productPic"
-            className="order__details__product__list__entry__img"
-          />
-          <div className="order__details__product__list__entry__name">
-            Product Name
-          </div>
-        </div>
-        <div className="order__details__product__list__entry__right">
-          <div className="order__details__product__list__entry__price">$35</div>
-          <Button placeholder="Delete" variant="btn-delete" />
-        </div>
-      </div>
-    </Nav.Link>
-  );
-};
+import ProductList from "../components/ProductList";
 export default class OrderDetails extends React.Component {
   constructor(props) {
     super(props);

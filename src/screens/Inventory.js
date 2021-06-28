@@ -1,51 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Users.scss";
-import Button from "../components/Button";
 import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import userImg from "../assets/userPic.png";
 import InputboxComponent from "../components/Inputbox";
+import InventoryRow from "../components/InventoryRow";
 import Select from "react-select";
-
-function InventoryRow() {
-  const [option, setOption] = useState(false);
-  return (
-    <Nav.Link className="panel__main__row">
-      <div className="panel__main__row__entry">
-        <img
-          src={userImg}
-          alt="userImg"
-          style={{ width: "30px", marginRight: ".5em" }}
-        />
-        Product
-      </div>
-      <div className="panel__main__row__entry">2424</div>
-      <div className="panel__main__row__entry">Not confirmed</div>
-      <div className="panel__main__row__entry">New</div>
-      <div className="panel__main__row__entry">Distribution Center - Dubai</div>
-      <div className="panel__main__row__entry">$34</div>
-      <div className="panel__main__row__entry">27 May 2020</div>
-      <div className="panel__main__row__entry">30</div>
-      <div className="panel__main__row__entry">
-        <div className="panel__main__row__entry__cta">
-          <div style={{ width: "100px" }}>
-            <InputboxComponent
-              placeholder="0"
-              ClassName="input__box"
-              type="number"
-            />
-          </div>
-          <div style={{ width: "50px" }}>
-            <Button variant="btn" placeholder="Add" />
-          </div>
-          <div style={{ width: "50px" }}>
-            <Button variant="upload-btn" placeholder="Set" />
-          </div>
-        </div>
-      </div>
-    </Nav.Link>
-  );
-}
 export default class Inventory extends React.Component {
   render() {
     const Options = [

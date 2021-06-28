@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import InputBox from "./Inputbox";
 import Button from "./Button";
-import Select from "react-select";
 
 export default function Bot() {
   const [isOpen, setIsOpen] = useState(false);
-  const Options = [
-    { value: "Fixed Cart Discount", label: "Fixed Cart Discount" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
-  ];
   return (
     <div className="bot__panel">
       {isOpen ? (

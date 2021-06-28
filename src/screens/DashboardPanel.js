@@ -1,50 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./DashboardPanel.scss";
 import Card from "../components/Card";
 import LineChart from "../components/LineChart";
 import SpineChart from "../components/SpineChart";
 import BarChart from "../components/BarChart";
 import DoughnutChart from "../components/DoughnutChart";
-import UserPic from "../assets/userPic.png";
-import { Link } from "react-router-dom";
-import { Nav } from "react-bootstrap";
 import Bot from "../components/Bot";
-
-const MessagePanelRow = () => {
-  return (
-    <Nav.Link
-      to="/dashboard/messages"
-      as={Link}
-      className="message__panel__small__row"
-    >
-      <div className="message__panel__samll__content">
-        <img
-          src={UserPic}
-          alt="user-pic"
-          className="message__panel__small__row__img"
-        />
-        <div className="messenger__name" style={{ fontWeight: "800" }}>
-          Francesca Metts
-        </div>
-      </div>
-      <div className="messenger__name">3 Days Ago</div>
-    </Nav.Link>
-  );
-};
-
-function StatsCard({ isData, data, heading, infoContent }) {
-  return (
-    <Card heading={heading} infoContent={infoContent}>
-      {isData ? (
-        <div className="panel__card__content__statistics">{data}</div>
-      ) : (
-        <div className="panel__card__content__statistics__null">
-          Nothing Here
-        </div>
-      )}
-    </Card>
-  );
-}
+import StatsCard from "../components/StatsCard";
 export default class DashboardPanel extends React.Component {
   render() {
     return (

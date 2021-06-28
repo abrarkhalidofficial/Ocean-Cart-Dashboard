@@ -1,25 +1,24 @@
-import { Button } from "react-bootstrap";
 import React from "react";
 
-function OrderProduct({ productImg }) {
-  return (
-    <div className="track__order__component__top__left__order">
-      <img
-        src={productImg}
-        alt="productImg"
-        className="track__order__component__top__img"
-      />
-      <div className="track__order__component__top__left__content">
-        <div className="track__order__component__top__left__content__heading">
-          Ajmal Mizyaan for Men
-        </div>
-        <div className="track__order__component__top__left__content__info">
-          By Lorem ipsum dolor By Lorem ipsum dolor By Lorem ipsum dolor
-        </div>
-      </div>
-    </div>
-  );
-}
+// function OrderProduct({ productImg }) {
+//   return (
+//     <div className="track__order__component__top__left__order">
+//       <img
+//         src={productImg}
+//         alt="productImg"
+//         className="track__order__component__top__img"
+//       />
+//       <div className="track__order__component__top__left__content">
+//         <div className="track__order__component__top__left__content__heading">
+//           Ajmal Mizyaan for Men
+//         </div>
+//         <div className="track__order__component__top__left__content__info">
+//           By Lorem ipsum dolor By Lorem ipsum dolor By Lorem ipsum dolor
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default function TrackOrderProduct({ productImg }) {
   const isMilestone1Done = true;
