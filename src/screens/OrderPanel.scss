@@ -43,6 +43,7 @@
   border-radius: 5px;
   margin: 1.5em auto;
 }
+
 .track__order__component__top {
   padding: 2em;
   border-radius: 8px;
@@ -79,11 +80,14 @@
 }
 
 .track__order__component__top__right {
-  color: #049dff !important;
+  background-color: #d85757 !important;
+  color: $primary !important;
   font-size: $normal-font-size !important;
+  border-radius: 5px !important;
+  height: 40px !important;
 }
 .track__order__component__top__right:hover {
-  color: $highlite;
+  background-color: darken(#d85757, 10%) !important;
 }
 
 .track__order__component__bottom {
@@ -147,12 +151,45 @@
   height: 30px;
   background-color: $primary;
   border-radius: 30px;
+  position: relative;
 }
 .track__order__component__bottom__milestone__points__circle__active {
   width: 30px;
   height: 30px;
   border-radius: 30px;
   background-color: $highlite;
+  position: relative;
+}
+.track__order__component__bottom__milestone__points__circle__info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 10px;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.track__order__component__bottom__milestone__points__circle:hover
+  .track__order__component__bottom__milestone__points__circle__info {
+  display: flex;
+}
+.track__order__component__bottom__milestone__points__circle__active:hover
+  .track__order__component__bottom__milestone__points__circle__info {
+  display: flex;
+}
+.track__order__component__bottom__milestone__points__circle__info__heading {
+  font-size: $heading-font-size;
+  font-weight: bold;
+  color: $font-color;
+  margin-bottom: 0.5em;
+}
+.track__order__component__bottom__milestone__points__circle__info__content {
+  font-size: $normal-font-size;
+  color: $font-color;
 }
 .track__order__component__bottom__milestone__points__name {
   font-size: $normal-font-size;

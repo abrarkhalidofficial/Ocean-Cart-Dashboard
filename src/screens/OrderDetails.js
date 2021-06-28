@@ -9,6 +9,7 @@ import DetailsRow from "../components/DetailsRow";
 import InputboxComponent from "../components/Inputbox";
 import barcodePic from "../assets/barcodePic.png";
 import Select from "react-select";
+import TrackOrderProduct from "../components/TrackOrderProduct";
 
 const ProductList = () => {
   return (
@@ -161,17 +162,7 @@ export default class OrderDetails extends React.Component {
               <div className="order__details__shipping__heading">
                 Shipment Tracking
               </div>
-              <div className="order__details__shipping__status">
-                <div className="order__details__shipping__status__point">
-                  <div className="order__details__shipping__status__point__svg"></div>
-                  <div className="order__details__shipping__status__point__info"></div>
-                </div>
-                <div className="order__details__shipping__status__line"></div>
-                <div className="order__details__shipping__status__point">
-                  <div className="order__details__shipping__status__point__svg"></div>
-                  <div className="order__details__shipping__status__point__info"></div>
-                </div>
-              </div>
+              <TrackOrderProduct />
             </div>
           </Card>
         </div>

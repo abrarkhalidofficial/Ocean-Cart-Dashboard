@@ -1,6 +1,5 @@
 import { Button } from "react-bootstrap";
 import React from "react";
-import { Link } from "react-router-dom";
 
 function OrderProduct({ productImg }) {
   return (
@@ -30,22 +29,47 @@ export default function TrackOrderProduct({ productImg }) {
   return (
     <>
       <div className="track__order__component">
-        <div className="track__order__component__top">
+        {/* <div className="track__order__component__top">
           <div className="track__order__component__top__left">
             <OrderProduct productImg={productImg} />
           </div>
-          <Link className="track__order__component__top__right" to="/dashboard">
-            Manage Order
-          </Link>
-        </div>
+          <Button
+            veriant="dark"
+            className="track__order__component__top__right"
+          >
+            Cancel Order
+          </Button>
+        </div> */}
         <div className="track__order__component__bottom">
           <div className="track__order__component__bottom__milestone">
             <div className="track__order__component__bottom__milestone__active"></div>
             <div className="track__order__component__bottom__milestone__points__1">
               {isMilestone1Done ? (
-                <div className="track__order__component__bottom__milestone__points__circle__active"></div>
+                <div className="track__order__component__bottom__milestone__points__circle__active">
+                  <div className="track__order__component__bottom__milestone__points__circle__info">
+                    <div className="track__order__component__bottom__milestone__points__circle__info__heading">
+                      Lorem, ipsum.
+                    </div>
+                    <div className="track__order__component__bottom__milestone__points__circle__info__content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis totam, impedit rem error placeat nulla facilis
+                      commodi veniam perferendis labore?
+                    </div>
+                  </div>
+                </div>
               ) : (
-                <div className="track__order__component__bottom__milestone__points__circle"></div>
+                <div className="track__order__component__bottom__milestone__points__circle">
+                  <div className="track__order__component__bottom__milestone__points__circle__info">
+                    <div className="track__order__component__bottom__milestone__points__circle__info__heading">
+                      Lorem, ipsum.
+                    </div>
+                    <div className="track__order__component__bottom__milestone__points__circle__info__content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis totam, impedit rem error placeat nulla facilis
+                      commodi veniam perferendis labore?
+                    </div>
+                  </div>
+                </div>
               )}
               <div className="track__order__component__bottom__milestone__points__name">
                 Shipping
@@ -53,9 +77,31 @@ export default function TrackOrderProduct({ productImg }) {
             </div>
             <div className="track__order__component__bottom__milestone__points__2">
               {isMilestone2Done ? (
-                <div className="track__order__component__bottom__milestone__points__circle__active"></div>
+                <div className="track__order__component__bottom__milestone__points__circle__active">
+                  <div className="track__order__component__bottom__milestone__points__circle__info">
+                    <div className="track__order__component__bottom__milestone__points__circle__info__heading">
+                      Lorem, ipsum.
+                    </div>
+                    <div className="track__order__component__bottom__milestone__points__circle__info__content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis totam, impedit rem error placeat nulla facilis
+                      commodi veniam perferendis labore?
+                    </div>
+                  </div>
+                </div>
               ) : (
-                <div className="track__order__component__bottom__milestone__points__circle"></div>
+                <div className="track__order__component__bottom__milestone__points__circle">
+                  <div className="track__order__component__bottom__milestone__points__circle__info">
+                    <div className="track__order__component__bottom__milestone__points__circle__info__heading">
+                      Lorem, ipsum.
+                    </div>
+                    <div className="track__order__component__bottom__milestone__points__circle__info__content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis totam, impedit rem error placeat nulla facilis
+                      commodi veniam perferendis labore?
+                    </div>
+                  </div>
+                </div>
               )}
               <div className="track__order__component__bottom__milestone__points__name">
                 Shipping
@@ -63,9 +109,31 @@ export default function TrackOrderProduct({ productImg }) {
             </div>
             <div className="track__order__component__bottom__milestone__points__3">
               {isMilestone3Done ? (
-                <div className="track__order__component__bottom__milestone__points__circle__active"></div>
+                <div className="track__order__component__bottom__milestone__points__circle__active">
+                  <div className="track__order__component__bottom__milestone__points__circle__info">
+                    <div className="track__order__component__bottom__milestone__points__circle__info__heading">
+                      Lorem, ipsum.
+                    </div>
+                    <div className="track__order__component__bottom__milestone__points__circle__info__content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis totam, impedit rem error placeat nulla facilis
+                      commodi veniam perferendis labore?
+                    </div>
+                  </div>
+                </div>
               ) : (
-                <div className="track__order__component__bottom__milestone__points__circle"></div>
+                <div className="track__order__component__bottom__milestone__points__circle">
+                  <div className="track__order__component__bottom__milestone__points__circle__info">
+                    <div className="track__order__component__bottom__milestone__points__circle__info__heading">
+                      Lorem, ipsum.
+                    </div>
+                    <div className="track__order__component__bottom__milestone__points__circle__info__content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis totam, impedit rem error placeat nulla facilis
+                      commodi veniam perferendis labore?
+                    </div>
+                  </div>
+                </div>
               )}
               <div className="track__order__component__bottom__milestone__points__name">
                 Shipping
@@ -73,9 +141,31 @@ export default function TrackOrderProduct({ productImg }) {
             </div>
             <div className="track__order__component__bottom__milestone__points__4">
               {isMilestone4Done ? (
-                <div className="track__order__component__bottom__milestone__points__circle__active"></div>
+                <div className="track__order__component__bottom__milestone__points__circle__active">
+                  <div className="track__order__component__bottom__milestone__points__circle__info">
+                    <div className="track__order__component__bottom__milestone__points__circle__info__heading">
+                      Lorem, ipsum.
+                    </div>
+                    <div className="track__order__component__bottom__milestone__points__circle__info__content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis totam, impedit rem error placeat nulla facilis
+                      commodi veniam perferendis labore?
+                    </div>
+                  </div>
+                </div>
               ) : (
-                <div className="track__order__component__bottom__milestone__points__circle"></div>
+                <div className="track__order__component__bottom__milestone__points__circle">
+                  <div className="track__order__component__bottom__milestone__points__circle__info">
+                    <div className="track__order__component__bottom__milestone__points__circle__info__heading">
+                      Lorem, ipsum.
+                    </div>
+                    <div className="track__order__component__bottom__milestone__points__circle__info__content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veritatis totam, impedit rem error placeat nulla facilis
+                      commodi veniam perferendis labore?
+                    </div>
+                  </div>
+                </div>
               )}
               <div className="track__order__component__bottom__milestone__points__name">
                 Shipping
