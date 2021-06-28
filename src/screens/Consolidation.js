@@ -1,6 +1,5 @@
 import React from "react";
 import "./Users.scss";
-import Button from "../components/Button";
 import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import InputboxComponent from "../components/Inputbox";

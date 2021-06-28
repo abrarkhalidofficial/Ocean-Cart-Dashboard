@@ -1,6 +1,5 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import Button from "./Button";
 
 export default function BankDepositsRow() {

@@ -16,20 +16,6 @@ export default function Header({ search }) {
   window.addEventListener("scroll", changeBackgrond);
   window.addEventListener("mouseover", changeBackgrond);
 
-  const languagePanel = () => {
-    if (document.querySelector(".language__panel").style.display === "none") {
-      document.querySelector(".language__panel").style.display = "flex";
-    } else {
-      document.querySelector(".language__panel").style.display = "none";
-    }
-  };
-  const selectOptions = [
-    { value: "Germany", label: "Germany" },
-    { value: "English", label: "English" },
-    { value: "Russian", label: "Russian" },
-    { value: "Hindi", label: "Hindi" },
-  ];
-
   return (
     <Navbar
       expand="lg"

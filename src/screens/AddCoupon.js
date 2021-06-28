@@ -10,7 +10,6 @@ export default function AddCoupon({ screenName }) {
     { value: "strawberry", label: "Strawberry" },
     { value: "vanilla", label: "Vanilla" },
   ];
-  const [showCatagoryEdit, setShowCatagoryEdit] = React.useState(false);
   return (
     <div className="panel__conatainer">
       <div className="panel__heading">{screenName}</div>
