@@ -2,7 +2,6 @@ import React from "react";
 import "./DashboardPanel.scss";
 import Card from "../components/Card";
 import productPic from "../assets/productPic.png";
-import UserPic from "../assets/userPic.png";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
 import Button from "../components/Button";
@@ -33,20 +32,6 @@ const ProductList = () => {
     </Nav.Link>
   );
 };
-
-function StatsCard({ isData, data, heading, infoContent }) {
-  return (
-    <Card heading={heading} infoContent={infoContent}>
-      {isData ? (
-        <div className="panel__card__content__statistics">{data}</div>
-      ) : (
-        <div className="panel__card__content__statistics__null">
-          Nothing Here
-        </div>
-      )}
-    </Card>
-  );
-}
 export default class OrderDetails extends React.Component {
   constructor(props) {
     super(props);

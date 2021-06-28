@@ -1,9 +1,7 @@
 import React from "react";
 import "./Users.scss";
-import Button from "../components/Button";
-import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
-import { Switch, Route, Link } from "react-router-dom";
-import userImg from "../assets/userPic.png";
+import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import InputboxComponent from "../components/Inputbox";
 import Select from "react-select";
 

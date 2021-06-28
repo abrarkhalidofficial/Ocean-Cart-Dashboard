@@ -1,10 +1,9 @@
 import React from "react";
 import "./Users.scss";
 import Button from "../components/Button";
-import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
-import { Switch, Route, Link } from "react-router-dom";
+import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import userImg from "../assets/userPic.png";
-import InputboxComponent from "../components/Inputbox";
 import Select from "react-select";
 
 function MovementsRow() {
@@ -90,7 +89,7 @@ export default class Movements extends React.Component {
       <div className="panel__conatainer">
         <div className="panel__heading">All Movements</div>
         <div className="panel__main__selctors__filters">
-        <div className="panel__main__selctors__filters__entity">
+          <div className="panel__main__selctors__filters__entity">
             <Select
               // defaultValue={[colourOptions[2], colourOptions[3]]}
               name="colors"

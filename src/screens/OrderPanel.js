@@ -1,10 +1,6 @@
 import React from "react";
 import "./OrderPanel.scss";
 import productImg from "../assets/productPic.png";
-import Button from "../components/Button";
-import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
-import { Switch, Route, Link } from "react-router-dom";
-import InputBox from "../components/Inputbox";
 import TrackOrderProduct from "../components/TrackOrderProduct";
 
 export default class OrderPanel extends React.Component {

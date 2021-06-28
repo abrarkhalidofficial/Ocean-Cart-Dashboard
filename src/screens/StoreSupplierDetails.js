@@ -1,11 +1,7 @@
 import React from "react";
 import "./UsersDetails.scss";
 import Button from "../components/Button";
-import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
-import { Switch, Route, Link } from "react-router-dom";
-import InputBox from "../components/Inputbox";
 import DetailsRow from "../components/DetailsRow";
-import bankDepositeFile from "../assets/bankDepositeFile.png";
 
 export default class StoreSupplierDetails extends React.Component {
   render() {

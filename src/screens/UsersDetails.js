@@ -1,9 +1,7 @@
 import React from "react";
 import "./UsersDetails.scss";
 import Button from "../components/Button";
-import { Nav, Form, Button as ButtonReact, Row } from "react-bootstrap";
-import { Switch, Route, Link } from "react-router-dom";
-import InputBox from "../components/Inputbox";
+import { Link } from "react-router-dom";
 import DetailsRow from "../components/DetailsRow";
 
 export default class UsersDetails extends React.Component {
