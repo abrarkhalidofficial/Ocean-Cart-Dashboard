@@ -1,4 +1,5 @@
 import React from "react";
+import "../screens/OrderPanel.scss";
 
 // function OrderProduct({ productImg }) {
 //   return (

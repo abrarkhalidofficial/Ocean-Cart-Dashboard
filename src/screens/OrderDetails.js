@@ -9,6 +9,7 @@ import barcodePic from "../assets/barcodePic.png";
 import Select from "react-select";
 import TrackOrderProduct from "../components/TrackOrderProduct";
 import ProductList from "../components/ProductList";
+import "./OrderPanel.scss";
 export default class OrderDetails extends React.Component {
   constructor(props) {
     super(props);
@@ -56,7 +57,10 @@ export default class OrderDetails extends React.Component {
         </div>
         <div className="panel__conatainer__empty__row">
           <Card>
-            <div className="order__details__product__list">
+            <div
+              className="order__details__product__list"
+              style={{ width: "105%" }}
+            >
               <ProductList />
               <ProductList />
               <ProductList />

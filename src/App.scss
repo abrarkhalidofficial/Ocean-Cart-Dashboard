@@ -418,6 +418,17 @@ body {
   align-items: center !important;
   flex: 1;
 }
+.Accordion__toggle__order__details__product__list__entry {
+  width: 100% !important;
+  height: fit-content !important;
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0em !important;
+  margin: 0em !important;
+}
+.Accordion__toggle__order__details__product__list__entry:hover {
+  background-color: $primary !important;
+}
 .panel__main__row__entry {
   min-width: fit-content;
   width: 100%;
@@ -682,7 +693,7 @@ body {
   display: flex;
   flex-direction: column;
   max-height: 400px;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   padding-right: 0.5em;
 }
