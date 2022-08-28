@@ -10,7 +10,7 @@ A admin panel for online shopping Ocean Cart let's help you find what you want w
 Clone the project
 
 bash
-  git clone https://github.com/MehfoozurRehman/Ocean-Cart-Dashboard
+ git clone https://github.com/MehfoozurRehman/Ocean-Cart-Dashboard
 
 
 Go to the project directory
